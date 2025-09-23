@@ -1,0 +1,673 @@
+* ¿Cuál de los siguientes enunciados son incorrectos acerca de la nomenclatura de una transacción?
+a. Debe haber un código de versión. Este debe ser igual al número del pom.xml
+b. Debe tener un código de entrono. Este código de entorno es de 2 caracteres.
+c. Debe tener un código de transacción. Suele ir después de la letra y son 3 caracteres alfanuméricos.
+d. Debe tener un código de país. Este código de país debe tener 2 caracteres.
+e. Debe tener un código de aplicación, comúnmente conocido como UUAA y debe ser un código de 4 caracteres.
+answer = a,b
+
+* ¿Cuál de las siguientes preguntas son incorrectas sobre la nomenclatura de una transacción?
+a.	Debe haber un país: debe tener 2 caracteres
+b.	Ninguna
+c.	Debe haber un código de aplicación, comúnmente conocido como UUAA: Debe ser un código de 4 caracteres
+d.	Debe haber un número de versión. Este debe ser igual al número del pom.xml
+answer = b
+
+* ¿Para visualizar las dependencias de las transacciones, en qué lugar del proyecto me debo ubicar?
+a. En cualquier ubicación.
+b. En la transacción en específico
+c. Debo estar en artifact
+d. Debo estar en la librería
+e. Debo estar en el POM
+answer = e
+
+* Para que una librería externa online, sea consumida por componente apx (lib, trx o job) es necesario:
+a.	Declarar la visibilidad en la uuaa que lo invoque
+b.	Declarar la visibilidad en la uuaa que pertenece la librería externa
+c.	NA
+d.	No es necesario declarar ninguna visibilidad
+e.	Solo es necesario importar la librería desde apx-cli para usarla
+answer = b
+
+* Para el consumo de un servicio ASO desde una transacción APX es necesario realizar un perfilado:
+a. Se perfila con la AAP de ASO
+b. No es necesario perfilar
+c. Ninguna de las anteriores
+d. Se perfila con la AAP de APX
+e. Se perfila con la AAP del servicio origen
+answer = e
+
+* Qué tag en el xml se utiliza para excluir el coverage?
+a. sonar.exclusions
+b. sonar.exclusions.coverage
+c. sonar.coverage.exclusions
+d. sonar.excliusions.coverage
+e. exclusions.coverage
+answer = c
+
+* ¿Cuáles son los valores de las propiedades para el proxy que se dan de alta en la configuración de la aplicación (UUAA) para consumir servicios externos en APX?
+a. defaultproxy
+b. api.connector.proxy.username
+c. proxyApxPeru
+d. api.connector.proxy.hostname
+e. api.connector.proxy.password
+answer = a,c
+
+* ¿Cuáles son las propiedades del proxy que se dan de Alta en la configuración de Seguridad (UUAA) para consumir servicios externos en APX? (múltiple elección)
+a. api.connector.proxy.port
+b. api.connector.proxy.username
+c. api.connector.proxy.password
+d. api.connector.proxy.hostname
+e. api.connector.proxy.user
+answer = b,c
+
+* ¿Cuáles son las propiedades del proxy que se dan de Alta en la configuración de la Aplicación (UUAA) para consumir servicios externos en APX? (múltiple elección)
+a. api.connector.proxy.hostname
+b. api.connector.proxy.host
+c. api.connector.proxy.password
+d. api.connector.proxy.port
+e. api.connector.proxy.username
+answer = b,c,d,e
+
+* Cuál es el porcentaje mínimo en Sonar para ambientes previos?
+a. 95
+b. 90
+c. No hay porcentaje mínimo
+d. 80
+e. 90
+answer = d
+
+* En una Transacción APX estándar nueva, cuáles son los headers de ejecución que se deben de verificar y actualizar, antes de ejecutar dicha transacción?
+a. Código de canal, código de lenguaje
+b. Solo código de canal
+c. Código de canal, código de transacción y usuario transaccional 
+d. Solo código de lenguaje
+e. Código de transacción y usuario transaccional
+answer = c
+
+* Los headers en APX necesarios para referir a una transacción específica son:
+a. country-code y version-code
+b. logical-transaction-code
+c. logical-transaction-code, version-code, country-code
+d. Ninguna
+e. logical-transaction-code,version-code
+answer = c
+
+* Cuáles son las dos propiedades básicas que se necesitan para poder hacer uso del conector de servicios internos? (múltiple elección)
+a. api.connector.<api_id>.uri
+b. api.connector.<api_id>.url
+c. api.connector.<api_id>.method
+d. api.connector.<api_id>.invoke.type
+e. api.connector.<api_id>.aso
+answer = b,d
+
+* ¿Cuáles son las dos propiedades básicas que se necesitan para poder hacer uso del conector de APIs al consumir servicios internos? (múltiple elección)
+a. api.connector.Id.url
+b. api.connector..host
+c. api.connector..api
+d. api.connector.id.invoke.type
+e. api.connector..aso
+answer = a,d
+
+* cual es el aplicativo con el que se administra la seguridad en apx
+a. chameleon
+b. ksmkr002
+answer = b
+
+* ¿Cuál es el servicio de la Plataforma Ether, que permite almacenar certificados para que puedan ser usados por APX?
+a. Lux Service
+b. Chameleon Service
+c. Certification Manager Service
+d. Armadillo Service
+e. Vault Service
+answer = b
+
+* ¿Cuál es el formato de Certificado que es soportado por el Servicio de Gestión de Servicios de Ether y es usado en APX?
+a. .p12
+b. .crt
+c. .cer
+d. .pm
+e. .pem
+answer = a
+
+* Para visualizar los campos entrada o salida de una transacción APX, ¿cuál es el comando necesario en el APX CLI?
+a. apx show in / out
+b. apx show out / in
+c. apx show ou / in
+d. apx show int / out
+e. apx show dep / in
+answer = a
+
+* Para crear un recurso en Ether de tipo transacción ¿Cuál sería la nomenclatura correcta?
+a. create-account
+b. onl_create_account
+c. create_acount
+d. trx_create_account
+e. apx_cpnt-create-account
+answer = b
+
+* Indique cual recurso está mal escrito:
+a. onl_recurso_1
+b. lib_recurso_1
+c. dto_recurso_1
+d. bch_recurso_1
+e. apx_recurso_1
+answer = e
+
+* Al consumir una API por internalApiConnector. ¿Cuál es la única excepción permitida?
+a. RestException
+b. SQLException
+c. DuplicateKeyException
+d. RestClientException
+e. DataAccessException
+answer = d
+
+* ¿Cuál no es una Excepción de APX?
+a. com.bbva.apx.exception.business.BusinessException
+b. java.lang.NumberFormatException
+c. com.bbva.apx.exception.db.DataIntegrityViolationException
+d. java.io.IOException
+e. org.springframework.web.client.RestClienException
+f. IllegalAccesException
+answer = b,d,f
+
+* Indique que excepciones son permitidas en la Arquitectura APX:
+a. BusinessException
+b. DuplicateKeyException
+c. NoResultException
+d. Exception
+answer = a,b,c
+
+* Para actualizar la versión de Arquitectura APX en una aplicación obsoleta, ¿cuántos valores se deben modificar en el POM.XML?
+a. 2
+b. 3
+c. 4
+d. 0
+e. 1
+answer = a
+
+* Las 3 dimensiones de APX son:
+a. Preparación, cálculos y demanda
+b. Pre entornos calidad y aceptación
+c. Comunidad, base y salida
+d. Desarrollo, test y producción
+e. Definición, implementación y despliegue
+answer = e
+
+* las 3 dimensiones de apx 
+a. Definición, Implementación y Despliegue
+b. diseño, implementación y despliegue
+c. preparación
+d. comunica
+e. desarrollo, test, producción
+f. perfilado  
+anwer = a
+
+* ¿En qué lugar se dan de alta los mensajes de error que devuelve una transacción APX?
+a. En la consola de operaciones APX
+b. En el archivo properties de la librería
+c. En el repositorio de artefactos
+d. En la base de Datos de la aplicación
+e. En la consola Ether
+answer = a
+
+* La invocación de una Trx APX se realiza mediante el método http:
+a. POST
+b. POST y GET
+c. UPDATE, DELETE
+d. PATCH
+e. GET
+answer = a
+
+* ¿Cuál es el tipo Severity que se usan en APX para indicar que la transacción terminó con errores y realizará rollback?
+a. Severity.EWR
+b. Severity.ERR
+c. Severity.ENR
+d. Severity.ERROR_TRANSACTIONAL
+e. Severity.ERROR_BUSINESS
+answer = a
+
+* Para evitar realizar un rollback en una transacción, es necesario:
+a. Solo basta propagar un BusinessException
+b. Declarar un setSeverity como Severity.EWR
+c. Por defecto no realiza un rollback
+d. Declarar el setSeverity como Severity.ENR
+e. NA.
+answer = d
+
+* ¿Para qué se utiliza el método addAdvice(...)?
+a. Para agregar dependencias al proyecto
+b. Para escribir logs en Atenea
+c. Para establecer errores funcionales definidos en la consola de operaciones
+d. Para integrar una unidad de despliegue con otras capacidades en Ether
+e. Para establecer una respuesta mock en los tests
+answer = c
+
+* Para la ejecución en local de APX, ¿en qué parte del pom principal se debe hacer cambios de ruta?
+a. Versión
+b. Name
+c. Properties
+d. Modules
+e. Dependencies
+answer = c
+
+* En APX CLI ¿Cuántos tipos de parámetros existen?
+a. 4
+b. 5
+c. 6
+d. 2
+e. 3
+answer = a
+
+* ¿Cuál es la utilidad de APX que permite consumir servicios internos desplegados dentro de la red del banco?
+a. internalBuilderConnector
+b. internalHTTPConnector
+c. internalApiConnector
+d. internalConnector
+e. internalWebService
+answer = c
+
+* ¿Cuáles son los componentes de Arquitectura básicos, necesarios para que una Transacción APX funcione?
+a. Solo runtime online
+b. Runtime Online y Consola APX
+c. Runtime Online, Base de datos y Consola APX
+d. Runtime Online, Repositorio y Base de datos
+e. Runtime Online, Repositorio, Base de datos y Consola APX
+answer = e
+
+* ¿En APX donde se aplica un proceso funcional ACID?
+a. Librería interna
+b. Transacción
+c. Librería
+d. DTO
+e. Ninguna
+answer = b
+
+* ¿Cuáles son los artefactos básicos que se construyen para la implementación de transacción APX?
+a. DTO, Transacción, Librería y Servicio
+b. DTO, Transacción y Librería
+c. Solo librería
+d. DTO y Transacción
+e. Transacción y Librería
+answer = b
+
+* El APIConnector tiene registrado un tiempo de respuesta de:
+a. 6seg
+b. 2seg
+c. NA
+d. 4seg
+e. 5seg
+answer = b
+
+* Es recomendable llamar dos librerías de una transacción
+a. Falso
+b. Verdadero
+answer = a
+
+* ¿Cuáles son los tipos de invocación que se pueden configurar para hacer uso del conector de servicios internos? (múltiple elección)
+a. api.connector.proxy.port
+b. api.connector.proxy.username
+c. api.connector.proxy.password
+d. api.connector.proxy.hostname
+e. api.connector.proxy.host
+answer = a,e
+
+* Para consumir servicios de semaas es necesario declarar los roles en:
+a. apx-cli
+b. ecs-cli
+c. NA
+answer = b
+
+* ¿Cuál es el endpoint de la Arquitectura APX para ejecutar las transacciones?
+a. RestService
+b. PG RestService
+c. GService
+d. RestService
+e. APXService
+answer = b
+
+* ¿Cuáles son los tipos de invocación que se pueden configurar para hacer uso del conector de APIs? (múltiple elección)
+a. 2: Invocación con impersonalización
+b. 0: Invocación simple (generica)
+c. 2: Invocación ASO
+d. 1: Invocación con impersonalización
+e. 1: Invocación ASO
+answer = a,b,e
+
+* Para consumir un servicio por impersonalización que invoke type es necesario registrar en la consola
+a. NA
+b. 2
+c. 3
+d. 0
+e. 1
+answer = b
+
+* que version de arquitectura apx son productivas
+a. 7.1.1
+b. 7.9.2
+c. 7.12.1
+d. 7.9.2
+e. 8.x.x
+answer = e
+
+* cuál es el formato para la consulta en una base de datos
+a. nombre_query_coneccion;
+b. nombre_query = query_conection
+c. query=conection; nombre_query
+d. nombre_query = conection_nombre_query
+e. conection = nombre_query ; query
+answer = e
+
+* Si se encuentra un problema en el entorno en vivo, ¿Qué tipo de rama de revisión debe crear?
+Type: APX Online
+a. Hotfix
+b. Basic
+c. Bugfix
+d. Feature
+e. Internal
+answer = a
+
+* Si se encuentra un problema en entornos previos, Qué tipo de rama de revisión debe crear?
+a. Bugfix ó feature
+b. solo bugfix
+c. hotfix
+d. solo feature
+answer = b
+
+* Cuando ejecutamos una malla para su ejecución, en qué estado inicia?
+a. NO OK
+b. STARTING
+c. FAILED
+d. SUCCESS
+e. STALLED
+answer = b
+
+* Un proceso batch APX puede consumir un API external
+a. FALSO
+b. VERDADERO
+
+* ¿Qué interface se utiliza para declarar un writer en un APX Batch?
+a. ItemWriter
+b. ItemProcess
+c. ItemBatchWriter
+d. CustomerItemWriter
+answer = a
+
+* Qué son el Reader, Process y Writer?
+a. Son componentes del step de tipo tasklet
+b. Son steps del job tasklet
+c. Son steps del job
+d. Son componentes del step de tipo chunk
+e. Son steps del job chunk
+answer = d
+
+* Qué tipos de parámetros soporta un job APX?
+a. Parámetros de Spring
+b. Parámetros de la Consola Ether
+c. Parámetros de la Consola de Operaciones APX
+d. Parámetros de Java
+e. APX Batch no soporta ningún parámetro
+answer = a,c
+
+* En qué tecnología está basado APX Batch?
+a. Cobol
+b. Go
+c. Spring
+d. Maven
+e. Python
+answer = c
+
+* Qué herramientas utilizamos para llevar a producción una malla Control M?
+a. Helix
+b. One Support
+c. Dimension
+d. Control M
+e. Todos
+answer = a,c,d
+
+* ¿Qué proceso en batch job realiza el commit?
+¿En qué componente, se procesa el bloque de registros definidos por el límite del intervalo (commit)?
+a. Process
+b. Writer
+c. Job
+d. Reader
+e. Step
+answer = b
+
+* ¿Qué interface de Spring Batch se usa en el writer para poder generar un archivo en FileX?
+a. NA
+b. MultiResourceItemWriter
+c. FlatFileItemWriter
+d. ItemWriter
+e. FlatFileFooterCallback
+answer = c
+
+* Para la UUAA PAPX, ¿Cuál de los siguientes namespace sería lo correcto?
+a. apx-batch-pe-papx-papxjr01-01-pe-de
+b. apx-batch-pe-papx-papxrj01-01-pe-de
+c. apx-batch-papx-papxjr01-01-pe-de
+d. apx-batch-pe-papx-papxrj01-01-de
+e. apx-batch-papx-papxrj01-01-pe-de
+answer = a
+
+* ¿Qué ruta de FileX se usa desde un apx batch para leer un archivo json?
+a. /fichtemcomp/datent/
+b. /fichtemcomp/datsal/
+c. /fichtemcomp/datsal/pe
+d. /fichtemcomp/datent/pe
+e. /fichtemcomp/pe/datent
+answer = a
+
+* ¿Cuál es el comando de APX CLI para crear un job?
+a. apx add mongo
+b. apx add shell
+c. apx add job
+d. apx add batch
+e. apx add process
+answer = c
+
+* ¿Cuáles son los tipos de JOBs APX? (múltiple elección)
+a. APX_ORA
+b. APX_ELASTIC
+c. APX_BATCH
+d. APX_MONGO
+e. APX_SHELL
+answer = c
+
+* Para crear un recurso en ether de tipo proceso batch ¿Cuál sería la nomenclatura correcta?
+a. batch_extract_log
+b. apx_batch_extract_log
+c. bch-extract-log
+d. extract_log
+e. bch_extract_log
+answer = e
+
+* en control m que tipo de job utiliza un apx batch para la infraestructura r3
+a. type os
+b. batch
+c. control
+d. ninguno
+e. type apx
+answer = e
+
+* ¿Qué es un namespace?
+a. Es un contenedor Docker
+b. Es administrado por el Control-M
+c. Es un JOB Manager
+d. Es el servicio Worker
+e. Segmento de recurso de la plataforma que se le asigna al JOB para su ejecución
+answer = e
+
+* cuando un job falla, es obligatorio notificar?
+a. solo fup
+b. fup
+c. grupo aplicativo
+d. usuario final
+e. arquitectura final
+answer = b
+
+* ¿En qué componente se pueden realizar el grabado de registros a una base de datos?
+a. Step
+b. Writer
+c. Process
+d. Reader
+e. Job
+answer = b
+
+* Un job se deploya e instala en prod?:
+a. solo se deploya
+b. solo se instala
+c. ambos
+d. NA
+answer = c
+
+* Con respecto a la conexión a Elastic, ¿qué hace la propiedad routing?
+a. Indica la Ruta del Servidor de la BBDD
+b. Particiona la Base de Datos
+c. N/A
+d. Indica el Ambiente de Despliegue
+answer = b
+
+* Con respecto a la conexión a Elastic, los valores NO permitidos para la variable “operation” son:
+a. _delete
+b. _bulk
+c. _search
+d. _doc
+answer = d
+
+* Sobre APX Batch Physics, seleccione la(s) respuesta(s) correcta(s):
+a. El gestor de archivos es el NFS
+b. Aún se sigue usando los namespace
+c. El gestor de archivos con el que trabaja es el File X
+d. La referencia a los componentes se toman en caliente son actualizar la versión del componente establecida en el POM que lo usa como dependencia.
+answer = a
+
+* Qué versión de Physics completa el pase a prod o algo asi?
+a. R1
+b. R2
+c. R3
+d. NA
+anwer = c
+
+* ¿Qué tipo de parámetro se debe utilizar para contabilizar registros en mongoDb?
+a. SUM
+b. COUNT
+c. ACCOUNT
+d. Ninguna
+e. CONTAR
+answer = b
+
+* ¿Las propiedades de mongo referencia a la base de datos física y lógica?
+a. Ninguna
+b. Solo lógica
+c. Solo física
+d. Ambas
+e. Solo en la configuración
+answer = b
+
+* Para realizar un insert desde una transacción a la base de datos mongoDb, se utiliza el tipo de parámetro
+a. INSERT
+b. INSERT_ONE
+c. INSERT_INTO
+d. INSERT_ONLY
+e. INSERT_MANY
+answer = b
+
+* Desde la lógica de negocio en la implementación de la librería, como hacemos referencia a las propiedades de mongo en la consola APX?
+a. Usando el nombre del collection
+b. Usando el código de la transacción
+c. Usando el nombre lógico de la conexión a la base de datos lógica
+d. Usando el nombre de un objeto en particular
+e. Usando código de la librería
+answer = c
+
+* Los documentos de mongoDb en una librería APX se expresan como:
+a. Tabla
+b. Collections
+c. Document
+d. Object
+e. DocumentWraper
+answer = e
+
+* ¿Cuál es la cantidad máxima de registros que puede devolver el conector a Oracle en una consulta?
+a. 1000
+b. 50000
+c. 5000
+d. 12500
+e. 10000
+answer = c
+
+* ¿Cuál de los siguientes métodos de jdbcUtils se usaría para traer una lista de registros paginados?
+a. pagingQueryList
+b. queryForList
+c. NA
+d. pagingForList
+e. pagingQueryForList
+answer = e
+
+* Que método trae las consultas paginadas en Oracle
+¿Cuál de los siguientes métodos de jdbcUtils se usaría para traer una lista de Mapas paginadas?
+a. pagingQueryForList
+b. queryForList
+c. pagingForList
+d. pagingQueryList
+e. NA
+answer = a
+
+* Marque la propiedad que no debe ir a producción
+a. database.UUAA.credentialPrefix
+b. database.UUAA.driverClassName
+c. database.UUAA.jndi.url
+d. database.UUAA.name
+e. database.UUAA.showsql
+answer = e
+
+* Que método se usa para insertar en Oracle
+a. update
+b. select
+c. addAll
+d. commit
+answer = a
+
+* Dentro de los componentes de APX, ¿Dónde se define la consulta a la BD Oracle?
+a. En la consola de operaciones
+b. En las variables de entorno
+c. En el archivo properties
+d. Ninguna
+e. En el código de la librería
+answer = c
+
+* ¿Cómo se llama la utilidad de APX para poder conectarse a una BD Oracle?
+a. jdbcUtils
+b. oracleConnector
+c. oracleUtils
+d. jdbcODBC
+e. jdbcConnector
+answer = a
+
+* Si quiero grabar en una base de datos ORACLE, ¿Qué tipo de JOB se puede utilizar? (múltiple elección)
+a. APX_ORACLE
+b. APX_ELASTIC
+c. APX_ORA
+d. APX_MONGO
+e. APX_BATCH
+f. elastic_batch
+g. oracle_sell_script
+h. mongo_batch
+answer = c,e
+
+* Cuántas TRX como máximo se pueden enviar en cics:
+a. 2
+b. 3
+c. 4
+d. 5
+e. 6
+answer = d
+
+* El tiempo de respuesta considerado por defecto para cics?
+a. 5
+b. Ninguno
+c. 2
+d. 3
+e. 4
+answer = e
