@@ -235,7 +235,7 @@ d. Uso de datos sintéticos.
 answer = b	
 		
 * El código Back-End que procesa la solicitud no verifica la identidad asociada con una solicitud tiene derecho a ejecutar el servicio. Por lo tanto, los atacantes pueden acceder a funcionalidad administrativa remota utilizando cuentas de usuario con privilegios bastante bajos. Qué amenaza se describe en el ejemplo anterior?	
-a. Autenticación/Autorización insegura.	X
+a. Autenticación/Autorización insegura.
 b. Protecciones binarias insuficientes.	
 c. Validación de entrada/salida insuficiente.	
 d. Controles de privacidad inadecuados.	
@@ -312,7 +312,7 @@ answer = e
 * Los atacantes prueban sistemáticamente varias combinaciones de claves hasta que encuentran la correcta para descifrar los datos. Qué amenaza se describe en el ejemplo anterior?	
 a. Comunicación insegura.	
 b. Validación de entrada/salida insuficiente.	
-c. Criptografía insuficiente.	X
+c. Criptografía insuficiente.
 d. Controles de privacidad inadecuados.	
 e. Uso inadecuado de credenciales.	
 f. Autenticación/Autorización insegura.	
@@ -535,7 +535,7 @@ e. Mantener versiones desactualizadas
 answer = d
 	
 * Qué medida ayuda a prevenir un ataque de DoS contra una API?	
-a. Aplicar limitación de velocidad	X
+a. Aplicar limitación de velocidad
 b. Aumentar el número de endpoints	
 c. Permitir múltiples solicitudes por segundo	
 d. Quitar autenticación	
@@ -558,7 +558,7 @@ answer = d
 * Qué mide 'Reproducibilidad' en el modelo DREAD?	
 a. La cantidad de daño que la amenaza puede causar.	
 b. La cantidad de personas que descubrirán la amenaza.	
-c. La facilidad con que puede ser recreada la amenaza.	X
+c. La facilidad con que puede ser recreada la amenaza.
 d. La gravedad de la amenaza.	
 answer = c	
 		
@@ -724,14 +724,14 @@ a. DAST
 b. SAST	
 c. Pentesting	
 d. Fuzzing	
-e. SCA	X
+e. SCA
 answer = e
 	
 * Qué tipo de prueba permite detectar vulnerabilidades y problemas de licencias en bibliotecas de terceros?	
 a. Pruebas de aceptación del usuario	
 b. DAST	
 c. SAST	
-d. Software Composition Analysis (SCA)	X
+d. Software Composition Analysis (SCA)
 answer = d	
 		
 * Qué tipo de prueba se enfoca en validar el comportamiento del sistema ante las acciones que realiza un atacante?	
@@ -844,7 +844,7 @@ answer = a
 
 * Técnica utilizada para evitar la ingeniería inversa y piratería del software, haciendo que el código fuente sea ilegible.	
 a. Copia de seguridad	
-b. Ofuscación	X
+b. Ofuscación
 c. Código genérico	
 d. Actualización	
 e. Hashes	
@@ -1175,7 +1175,7 @@ answer = a
 
 * Una empresa implementa un modelo de IA que no ha sido entrenado con datos precisos. Qué riesgo principal enfrenta la empresa?	
 a. El modelo será más seguro y eficiente.	
-b. El modelo tomará decisiones basadas en patrones defectuosos, lo que podría generar errores.	X
+b. El modelo tomará decisiones basadas en patrones defectuosos, lo que podría generar errores.
 c. El modelo se ajustará automáticamente a los datos erróneos sin afectar los resultados.	
 d. El modelo será 100% confiable desde el inicio.	
 answer = b
@@ -1291,8 +1291,7 @@ password
 qwerty
 12345
 dragon
-
-* Considerando esto. Cual de las siguientes amenazas de OWASP TOP 10 se podría causar?"	
+Considerando esto. Cual de las siguientes amenazas de OWASP TOP 10 se podría causar?"	
 a. Inyección.	
 b. Fallos de criptografía	
 c. Fallos de integridad de software y datos.	
@@ -1333,7 +1332,7 @@ answer = d
 
 * Qué tipo análisis efectúa la inspección del código cuando este se está ejecutando?	
 a. Sanitización de entradas.	
-b. Análisis de código dinámico	X
+b. Análisis de código dinámico
 c. Compilación	
 d. Depuración (Debugging)	
 e. Revisión de código	
@@ -1350,7 +1349,7 @@ answer = d
 * Durante el proceso de desarrollo de software, el equipo está utilizando herramientas para gestionar las bibliotecas y componentes de terceros integrados en la aplicación. La principal preocupación es garantizar que no existen vulnerabilidades de seguridad ni problemas de licencias asociados con estas dependencias externas. Cual de las siguientes pruebas es la más adecuada para este propósito?	
 a. Prueba de caja negra. Se enfocan en la funcionalidad del sistema sin tener en cuenta el código fuente o las dependencias externas.	
 b. Pruebas de integración. Se aplica para verificar la interacción entre los diferentes módulos del sistema, pero no abordan las dependencias externas.	
-c. Software Composition Analysis (SCA). Se enfoca en la gestión y análisis de las bibliotecas y dependencias de terceros, identificados vulnerabilidades de seguridad y problemas de licencias.	X
+c. Software Composition Analysis (SCA). Se enfoca en la gestión y análisis de las bibliotecas y dependencias de terceros, identificados vulnerabilidades de seguridad y problemas de licencias.
 d. Pruebas de caja blanca. Se realizan analizando el código fuente y la estructura interna del sistema, pero no gestionan las dependencias de terceros,	
 e. Pruebas de aceptación del usuario. Se realizan para asegurar que el sistema cumpla con los requisitos del cliente, pero no se ocupan de las dependencias externas.	
 f. Pruebas de regresión. Se realizan para asegurar que los cambios no afecten funcionalidades existentes, pero no están orientadas a las bibliotecas externas.	
@@ -1398,7 +1397,7 @@ answer = d
 		
 * Esta es una técnica utilizada para evitar la ingeniería inversa y la piratería, forma parte de los requisitos antipiratería; lo que busca en transformar el código fuente original para volver ilegible y difícil de analizar el código	
 a. Cifrado simétrico.	
-b. Ofuscación	X
+b. Ofuscación
 c. Replicación	
 d. Cifrado asimétrico	
 e. Copias de seguridad	
@@ -1610,15 +1609,15 @@ answer = a
 * Su empresa está desarrollando una aplicación web utilizando varias bibliotecas y componentes de terceros. El equipo de desarrollo decide utilizar una herramienta SCA para evaluar la seguridad y la gestión de las dependencias de terceros antes de lanzar la aplicación al público. ¿Cuál de las siguientes afirmaciones describe correctamente el uso de SCA en este escenario?	
 a. El SCA es útil solo en las fases finales del desarrollo, cuando el software ya está en producción.	
 b. El SCA analiza solo el código fuente de la aplicación, sin tener en cuenta las dependencias externas de terceros.	
-c. El SCA ayuda a identificar vulnerabilidades de seguridad y problemas de licencias asociados con las bibliotecas y componentes de terceros, asegurando que sean seguros y compatibles antes del lanzamiento.	X
+c. El SCA ayuda a identificar vulnerabilidades de seguridad y problemas de licencias asociados con las bibliotecas y componentes de terceros, asegurando que sean seguros y compatibles antes del lanzamiento.
 d. El SCA reemplaza todas las pruebas de seguridad, eliminando la necesidad de realizar análisis dinámicos o estáticos adicionales.	
 e. El SCA se aplica exclusivamente a aplicaciones móviles y no es útil para aplicaciones web que utilizan bibliotecas de terceros.	
 f. El SCA se utiliza exclusivamente para optimizar el rendimiento de las bibliotecas y componentes de terceros, sin enfocarse en la seguridad o las licencias.
 answer = c
 
 * Con el fin de lograr prevenir la amenaza del tipo componentes vulnerables y obsoletos, decide validar los datos proporcionados por el usuario, sanitizados en el proceso por la aplicación usando consultas dinámicas en el proceso. ¿Esto logrará impedir que se materialice la amenaza?	
-	a. Verdadero.	
-	b. Falso.
+a. Verdadero.	
+b. Falso.
 answer = b	
 		
 * Gracias a este tipo de requerimientos, se puede especificar qué información se le devuelve al usuario en caso de haber un error dentro de la aplicación.	
