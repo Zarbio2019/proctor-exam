@@ -11,7 +11,7 @@ a.	Debe haber un país: debe tener 2 caracteres
 b.	Ninguna
 c.	Debe haber un código de aplicación, comúnmente conocido como UUAA: Debe ser un código de 4 caracteres
 d.	Debe haber un número de versión. Este debe ser igual al número del pom.xml
-answer = b
+answer = d
 
 * ¿Para visualizar las dependencias de las transacciones, en qué lugar del proyecto me debo ubicar?
 a. En cualquier ubicación.
@@ -45,7 +45,7 @@ answer = e
 a. sonar.exclusions
 b. sonar.exclusions.coverage
 c. sonar.coverage.exclusions
-d. sonar.excliusions.coverage
+d. sonar.exclusions.coverage
 e. exclusions.coverage
 answer = c
 
@@ -59,7 +59,7 @@ answer = a,c
 
 * cuáles son los valores para las propiedades para el proxy en uuaa, para consumir servicios externos en apx.
 a. default
-asnwer = a
+answer = a
 
 * ¿Cuáles son las propiedades del proxy que se dan de Alta en la configuración de Seguridad (UUAA) para consumir servicios externos en APX? (múltiple elección)
 a. api.connector.proxy.port
@@ -111,8 +111,8 @@ answer = b,d
 
 * ¿Cuáles son las dos propiedades básicas que se necesitan para poder hacer uso del conector de APIs al consumir servicios internos? (múltiple elección)
 a. api.connector.Id.url
-b. api.connector..host
-c. api.connector..api
+b. api.connector.host
+c. api.connector.api
 d. api.connector.id.invoke.type
 e. api.connector.aso
 answer = a,d
@@ -435,7 +435,6 @@ e. conection = nombre_query ; query
 answer = e
 
 * Si se encuentra un problema en el entorno en vivo, ¿Qué tipo de rama de revisión debe crear?
-Type: APX Online
 a. Hotfix
 b. Basic
 c. Bugfix
@@ -662,8 +661,7 @@ apx-ora
 apx-batch
 answer = a
 
-* ¿Qué proceso en batch job realiza el commit?
-¿En qué componente, se procesa el bloque de registros definidos por el límite del intervalo (commit)?
+* ¿Qué proceso en batch job realiza el commit?. ¿En qué componente, se procesa el bloque de registros definidos por el límite del intervalo (commit)?
 a. Process
 b. Writer
 c. Job
@@ -701,7 +699,7 @@ b. apx add shell
 c. apx add job
 d. apx add batch
 e. apx add process
-answer = c
+answer = a,c
 
 * ¿Cuáles son los tipos de JOBs APX? (múltiple elección)
 a. APX_ORA
@@ -709,7 +707,7 @@ b. APX_ELASTIC
 c. APX_BATCH
 d. APX_MONGO
 e. APX_SHELL
-answer = c
+answer = a,c
 
 * Para crear un recurso en ether de tipo proceso batch ¿Cuál sería la nomenclatura correcta?
 a. batch_extract_log
@@ -783,7 +781,7 @@ answer = d
 a. El gestor de archivos es el NFS
 b. Aún se sigue usando los namespace
 c. El gestor de archivos con el que trabaja es el File X
-d. La referencia a los componentes se toman en caliente son actualizar la versión del componente establecida en el POM que lo usa como dependencia.
+d. La referencia a los componentes se toman en caliente sin actualizar la versión del componente establecida en el POM que lo usa como dependencia.
 answer = a
 
 * Qué versión de Physics completa el pase a prod o algo asi?
@@ -853,8 +851,7 @@ d. pagingForList
 e. pagingQueryForList
 answer = e
 
-* Que método trae las consultas paginadas en Oracle
-¿Cuál de los siguientes métodos de jdbcUtils se usaría para traer una lista de Mapas paginadas?
+* Que método trae las consultas paginadas en Oracle.? ¿Cuál de los siguientes métodos de jdbcUtils se usaría para traer una lista de Mapas paginadas?
 a. pagingQueryForList
 b. queryForList
 c. pagingForList
@@ -959,4 +956,4 @@ b. Ninguno
 c. 2
 d. 3
 e. 4
-answer = e
+answer = d

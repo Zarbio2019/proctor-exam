@@ -1,0 +1,1844 @@
+* Al comparar las pruebas SCA y SAST, cuáles de las siguientes afirmaciones son correctas? (Selección múltiple)	
+a. SCA se centra en analizar cómo funcionan los componentes a tiempo de ejecución.	
+b. SAST evalúa cómo funcionan a tiempo de ejecución los componentes.	
+c. SCA se centra en analizar los componentes externos.
+d. SAST se enfoca en analizar los componentes desarrollados.
+e. SCA permite evaluar lo mismo que SAST.	
+f. SAST se enfoca en analizar los componentes utilizados.	
+answer = c,d
+
+* Al utilizar controles de seguridad (por ejemplo, algoritmos criptográficos) que están bajo el escrutinio de los diversos miembros de una comunidad sobre los desarrollados de manera interna. A qué principio de seguridad estamos usando?	
+a. Diseño abierto.
+b. Diseño modular.	
+c. Diseño hermético.	
+d. Fallo seguro.	
+e. Menor privilegio.	
+f. Defensa en profundidad.	
+answer = a
+
+* Con el fin de lograr prevenir la amenaza del tipo Configuración incorrecta de seguridad, decide realizar un proceso de hardening, el cual involucra eliminar componentes no necesarios, por ejemplo, cuentas, programas, librerías y demás. Además de lo anterior, decide automatizar el proceso de verificación de control de cambios y de configuración. Esto logrará impedir que se materialice la amenaza?	
+a. Verdadero.
+b. Falso.	
+answer = a	
+		
+* Con el fin de lograr prevenir la amenaza del tipo de errores criptográficos, decide almacenar la clave criptográfica junto con los datos que se están respaldando. Esto logrará impedir que se materialice la amenaza?	
+a. Falso.
+b. Verdadero.	
+answer = a		
+		
+* Con el fin de lograr prevenir la amenaza del tipo Diseño inseguro, decide realizar modificaciones en el código para reforzar la validación de entrada y realizar las consultas a la BD usando consultas parametrizadas ya desinfectadas. Esto logrará impedir que se materialice la amenaza?	
+a. Falso.
+b. Verdadero.	
+answer = a
+		
+* Con el fin de lograr prevenir la amenaza del tipo errores de registro y supervisión de seguridad, decide registrar en la bitácora actividades relevantes de actividad, por ejemplo, inicios de sesión y operaciones privilegiadas. Además de incluir una nueva herramienta de monitoreo, como por ejemplo un SIEM/SOAR con los ajustes necesarios, para detectar eventos que sean relevantes para su organización. Esto logrará impedir que se materialice la amenaza?	
+a. Falso.	
+b. Verdadero.		
+answer = b
+		
+* Considerando la amenaza de ataques a la cadena de suministro, qué tipo de prueba recomendaría utilizar para prevenir este tipo de situaciones?	
+a. Carga.	
+b. SAST.	
+c. SCA.
+d. Unitarias.	
+e. Integración.	
+f. DAST.
+answer = c
+
+* Considerando la importancia del manejo de memoria, existe una condición que ocurre cuando los datos que se copian en el búfer son más grandes de lo que el búfer puede manejar. Esto puede considerarse como qué tipo de amenaza?	
+a. Denegación de servicio.	
+b. Keylogger.	
+c. XSS.	
+d. Buffer overflow.
+e. Falsificación de solicitudes del lado del servidor.	
+f. Inyección.
+answer = d
+
+* Considerando las distintas pruebas que se realizan sobre el software para garantizar su funcionalidad, si hablamos de una prueba que se enfoca en justamente validar el comportamiento del sistema ante las acciones que realiza un atacante, de qué tipo de prueba estamos hablando?	
+a. Pruebas de penetración.
+b. Pruebas unitarias.	
+c. Pruebas de regresión.	
+d. Pruebas lógicas.	
+e. Pruebas de rendimiento.	
+f. Pruebas de seguridad.
+answer = a
+
+* Considerando que un desarrollador escribe código y que, por alguna razón, se le da la luz verde para subir sus cambios sin que previamente hayan sido validados los cambios de manera rigurosa por algún otro compañero, en esa situación se pueden introducir cambios dañinos que se detonen en algún momento puntual. De qué tipo de amenaza estamos hablando?	
+a. Buffer overflow.	
+b. Bombas lógicas.
+c. Revisión de código.	
+d. Análisis de código estático.	
+e. Spyware.	
+f. Robo de sesión.
+answer = b
+
+* Considerando un usuario que interactúa de forma cotidiana con un punto de venta de autoservicio, se da cuenta que la aplicación con la que interactúa le aplica un descuento del 100% de sus productos si realiza una serie de pasos. Considerando lo anterior, qué tipo de agente de amenaza se identifica en el enunciado?	
+a. Descubridor accidental.	
+b. Script kiddie.	
+c. Hacker.	
+d. Amenaza interna.
+e. Cracker.	
+f. Hacktivista.
+answer = d
+
+* Considerando una aplicación con una validación de entrada pobre (se omiten sustituir valores, eliminar caracteres especiales o no literaliza la entrada), qué tipo de amenazas podrían presentarse?	
+a. Robo de sesión.	
+b. Falsificación de solicitudes del lado del servidor.	
+c. Mensajes de error detallados.	
+d. XSS.	
+e. Fuerza bruta.	
+f. Inyección SQL.
+answer = f
+
+* Cuál afirmación describe mejor cómo SCA, SAST y DAST se complementan?	
+a. SCA se aplica solo a aplicaciones móviles, mientras que SAST y DAST son exclusivos para aplicaciones web.	
+b. SCA se enfoca en revisar el código fuente en busca de vulnerabilidades, SAST identifica fallos de seguridad en el código antes de la ejecución, y DAST evalúa la aplicación en ejecución para detectar vulnerabilidades que solo pueden ser identificadas en tiempo real.
+c. SCA se utiliza exclusivamente para probar el rendimiento de la aplicación en su entorno de producción mientras que SAST y DAST solo se enfocan en la calidad del código.	
+d. SCA y SAST se utilizan en conjunto durante el desarrollo para detectar vulnerabilidades en el código fuente, mientras que DAST se aplica después del lanzamiento para probar el comportamiento de la aplicación en producción.	
+e. SAST y DAST son procesos idénticos que se usan solo en etapas finales de desarrollo, sin aplicar ningún análisis durante la fase de codificación.	
+f. SCA reemplaza las pruebas de seguridad realizadas por SAST y DAST, ya que se centra solo en la calidad del código.	
+answer = b
+
+* Cuál de las siguientes afirmaciones sobre DAST y SCA es correcta?	
+a. DAST evalúa la seguridad de la aplicación mientras está en ejecución, mientras que SCA se enfoca en analizar el código fuente sin ejecutar la aplicación.	
+b. DAST requiere la ejecución de la aplicación para analizar su comportamiento, mientras que SCA se enfoca en revisar el código fuente sin necesidad de ejecutar el software.
+c. DAST analiza el código fuente estático de una aplicación, mientras que SCA evalúa su comportamiento en tiempo de ejecución.	
+d. DAST y SCA son dos técnicas que se utilizan para realizar análisis de seguridad estático y dinámico, respectivamente.	
+answer = b	
+		
+* Cuál de las siguientes opciones es el tiempo ofertado que, de no cumplirse, puede haber sanciones por alguna de las partes?	
+a. RTO.	
+b. SLA.
+c. RPO.	
+d. RCO.	
+e. MTD.	
+f. RTA.	
+answer = b
+
+* Cuál de las siguientes vulnerabilidades surge por una persistencia de sesión incorrecta?	
+a. Ataques de lógica de aplicaciones.	
+b. Fallas de escaneo dinámico.	
+c. Secuestro de sesión.
+d. Administración de sesiones rotas.	
+answer = c	
+		
+* Cuál de los siguientes es un control de seguridad digital?	
+a. Software antivirus.
+b. Mitigación de DDoS.	
+c. Sensores de detección de intrusiones.	
+d. Sistemas de prevención de intrusiones.	
+answer = a	
+		
+* Cuál es el propósito principal de las herramientas utilizadas en DevOps para gestionar riesgos y vulnerabilidades?	
+a. Automatizar el proceso de entrega continua.	
+b. Asegurar la infraestructura en la nube.	
+c. Detectar y marcar los riesgos y vulnerabilidades para su investigación.
+d. Mejorar la eficiencia del proceso de desarrollo.	
+answer = c	
+		
+* Cuál es el propósito principal de las pruebas de penetración?	
+a. Probar la funcionalidad del código.	
+b. Medir la resistencia frente a ataques.
+c. Validar la persistencia de sesión.	
+d. Evaluar el diseño de interfaz.	
+answer = b	
+		
+* Cuál es la actividad de seguridad que se lleva a cabo durante la etapa de implementación del SDLC?	
+a. Generación del modelo de amenazas.	
+b. Aplicación de estándares de desarrollo.
+c. Planificación de nuevos requisitos.	
+d. Creación de documentación.	
+answer = b	
+		
+* Cuál es la metodología que toma el valor de la pérdida de un activo al realizarse una operación?	
+a. STRIDE.	
+b. DREAD.	
+c. ARO.	
+d. SLE.
+e. Modelado de amenazas.	
+f. CIAAAA.
+answer = d
+
+* Cuál es un ejemplo de expansión de secretos en un entorno de desarrollo?	
+a. El almacenamiento de secretos en ubicaciones no seguras como computadoras portátiles o servidores de compilación
+b. La automatización de la entrega continua sin validación de credenciales	
+c. El uso de contraseñas encriptadas en código abierto	
+d. La eliminación de claves SSH de los repositorios de código	
+answer = a	
+		
+* Cuál es un ejemplo de una vulnerabilidad de inyección?	
+a. Uso de consultas dinámicas sin parametrizar
+b. Uso de encabezados HTTP configurados	
+c. Implementar autenticación multi-factor	
+d. No segmentar la arquitectura	
+answer = a	
+		
+* Cuando trabajamos con lenguajes de programación, C# de .Net puede ser considerado un lenguaje:	
+a. Alto nivel.	
+b. Ensamblador.	
+c. Interpretado.	
+d. Ensamblador.	
+e. Compilado.	
+f. Híbrido.
+answer = f
+
+* Cuando una aplicación de IA cambia sus políticas de privacidad o introduce nuevas funcionalidades, qué debe hacer la empresa respecto al consentimiento de los usuarios?	
+a. El consentimiento no es necesario si las políticas no cambian.	
+b. La empresa debe notificar a los usuarios y pedirles que revisen y confirmen nuevamente su consentimiento.
+c. No es necesario hacer nada si el consentimiento ya ha sido obtenido.	
+d. Solo se debe actualizar el consentimiento si hay un cambio en el algoritmo.	
+answer = b	
+		
+* De qué tipo de criterios se está hablando cuando mencionamos RPO, RTO, MTD?	
+a. Requerimientos de confidencialidad.	
+b. Requerimientos de manejo de errores.	
+c. Requerimientos de manejo de configuraciones.	
+d. Requerimientos de disponibilidad.
+e. Requerimientos de autenticación.	
+f. Requerimientos de integridad.	
+answer = d
+
+* Demasiadas peticiones dirigidas a una API pueden ralentizar o detener el servicio para otros clientes. A qué tipo de amenazas estamos hablando?	
+a. DDoS.
+b. Ataques basados en la autenticación.	
+c. Aprovechamientos de vulnerabilidades.	
+d. DoS.	
+e. Errores de autorización.	
+answer = a
+	
+* Durante la implementación de un contenedor, un miembro del equipo intenta acceder a imágenes sin usar controles de acceso. Cuál es el riesgo?	
+a. El proceso de integración será más lento.	
+b. Los datos no estarán disponibles.	
+c. El contenedor no podrá ejecutarse.	
+d. Exposición de vulnerabilidades conocidas.
+answer = d	
+		
+* Durante la implementación de un nuevo entorno en la nube, el equipo de TI decide usar scripts automatizados para aprovisionar servidores y bases de datos. Qué enfoque están utilizando?	
+a. DevSecOps.	
+b. Administración de artefactos.	
+c. Consistencia operativa.	
+d. Infraestructura como Código (IaC).
+answer = d	
+		
+* Durante la integración continua, un equipo omite la automatización de la verificación de seguridad. Cuál es el impacto?	
+a. Aumento de los riesgos de seguridad por errores humanos.
+b. Los contenedores se desarrollan más rápido.	
+c. El sistema operativo se actualizará automáticamente.	
+d. El proceso de integración se acelera.	
+answer = a	
+		
+* Durante una auditoría de datos, un equipo de desarrollo descubre que el modelo de IA toma decisiones que discriminan contra un grupo demográfico específico debido a un conjunto de datos de entrenamiento sesgado. Qué práctica debería haberse implementado para evitar este problema?	
+a. Derecho de oposición.
+b. Pruebas de sesgo.
+c. Plataforma de gestión de consentimiento.	
+d. Uso de datos sintéticos.	
+answer = b	
+		
+* El código Back-End que procesa la solicitud no verifica la identidad asociada con una solicitud tiene derecho a ejecutar el servicio. Por lo tanto, los atacantes pueden acceder a funcionalidad administrativa remota utilizando cuentas de usuario con privilegios bastante bajos. Qué amenaza se describe en el ejemplo anterior?	
+a. Autenticación/Autorización insegura.	X
+b. Protecciones binarias insuficientes.	
+c. Validación de entrada/salida insuficiente.	
+d. Controles de privacidad inadecuados.	
+e. Uso inadecuado de credenciales.	
+f. Comunicación insegura.	
+answer = a
+
+* En qué medida es importante implementar herramientas que automaticen el registro y almacenamiento de consentimientos para las empresas que manejan datos personales en la API?	
+a. Solo es importante para empresas pequeñas	
+b. Es fundamental para garantizar la trazabilidad y cumplir con las leyes de privacidad como el GDPR
+c. No es necesario almacenar el consentimiento si los datos son anónimos	
+d. Se puede omitir el registro si se usan datos públicos	
+answer = b	
+		
+* En qué tipo de lenguajes de programación el código fuente no se compila ni se convierte en códigos de instrucciones específicos del procesador?	
+a. Lenguajes interpretados.
+b. Lenguajes de bajo nivel.	
+c. Lenguajes compilados.	
+d. Lenguajes de alto nivel.	
+e. Lenguaje máquina.	
+f. Lenguaje ensamblador.	
+answer = a
+
+* En un pipeline de DevSecOps, qué herramientas son utilizadas en la fase de construcción para detectar fallas en el código antes de su implementación?	
+a. Herramientas de prueba dinámica de aplicaciones (DAST).	
+b. Herramientas de prueba estática de aplicaciones (SAST).
+c. Plataformas de análisis de vulnerabilidades.	
+d. Consolas de administración SaaS.	
+answer = b	
+		
+* En una auditoría se detecta que un repositorio de código público contenía credenciales de seguridad expuestas. Qué recomendación de DevSecOps aplicaría para evitar este error en la etapa de codificación?	
+a. Utilizar claves SSH incrustadas en el código fuente.	
+b.Aplicar análisis de vulnerabilidades en la etapa de prueba.	
+c. Implementar controles Git para proteger las credenciales de seguridad.
+d. Usar herramientas SAST en la fase de despliegue.	
+answer = c	
+		
+* Gracias a este tipo de requerimientos, se puede llevar a cabo investigación sobre qué pasó en un sistema. Esta investigación puede usarse para corregir errores o bien detectar actividades anormales o no autorizadas.	
+a. Requerimientos de confidencialidad	
+b. Requerimientos de integridad	
+c. Requerimientos de autenticación	
+d. Requerimientos de manejo de errores	
+e. Requerimientos de manejo de configuraciones	
+f. Requerimientos de seguimiento
+answer = f
+
+* Hablando de algoritmos para cifrar la información, hay a grandes rasgos 3 tipos de algoritmos. En ese sentido, le piden usar un cifrado para cifrar una gran cantidad de información y dispone de poco tiempo para cifrar ese gran volumen de información. Qué tipo de algoritmo utilizaría?	
+a. Cifrado simétrico.
+b. Curva elíptica.	
+c. Ofuscación.	
+d. Hash + salt value.	
+e. Hash.	
+f. Cifrado asimétrico.
+answer = a
+
+* Hablando de la técnica de modelado de amenazas STRIDE, seleccione las opciones que forman parte del escenario descrito.	
+a. Tampering
+b. Information destruction	
+c. Exploitation	
+d. Elevation of privileges
+e. Session hijacking	
+f. Information disclosure
+answer = a,d,f
+
+* Lista blanca de URLs o direcciones IP permitidas para restringir los destinos de las solicitudes. Utilice bibliotecas o funciones de análisis de URL que impongan una validación estricta. Los anteriores son ejemplos de soluciones ante cuál tipo de amenazas?	
+a. Autorización de nivel de propiedad de objeto roto.	
+b. Acceso sin restricciones a flujos comerciales sensibles.	
+c. Autorización de nivel de función rota.	
+d. Configuración incorrecta de seguridad.	
+e. Falsificación de solicitudes del lado del servidor.
+f. Gestión inadecuada del inventario.	
+answer = e
+
+* Los atacantes prueban sistemáticamente varias combinaciones de claves hasta que encuentran la correcta para descifrar los datos. Qué amenaza se describe en el ejemplo anterior?	
+a. Comunicación insegura.	
+b. Validación de entrada/salida insuficiente.	
+c. Criptografía insuficiente.	X
+d. Controles de privacidad inadecuados.	
+e. Uso inadecuado de credenciales.	
+f. Autenticación/Autorización insegura.	
+answer = c
+
+* Los desarrolladores dejan sus API y recursos vulnerables a ataques si los atacantes pueden manipular a proveedores externos. A qué categoría de amenaza hace referencia el enunciado anterior?	
+a. Acceso sin restricciones a flujos comerciales sensibles.	
+b. Consumo inseguro de API.
+c. Configuración incorrecta de seguridad.	
+d. Autorización de nivel de propiedad de objeto roto.	
+e. Autorización de nivel de función rota.	
+f. Falsificación de solicitudes del lado del servidor.	
+answer = b
+
+* Los parámetros de consulta de URL se utilizan a menudo para transmitir argumentos de solicitud a un servidor; sin embargo, son visibles al menos en los registros del servidor, y a menudo también en el análisis del sitio web y posiblemente en el historial del navegador local. Qué amenaza se describe en el ejemplo anterior?	
+a. Protecciones binarias insuficientes.	
+b. Validación de entrada/salida insuficiente.	
+c. Autenticación/Autorización insegura.	
+d. Comunicación insegura.	
+e. Controles de privacidad inadecuados.
+f. Uso inadecuado de credenciales.	
+answer = e
+
+* Monitorear y registrar el acceso a flujos comerciales confidenciales. Realizar pruebas de seguridad periódicas, incluidas pruebas de penetración y revisiones de código, para identificar y abordar las vulnerabilidades relacionadas con el acceso sin restricciones a flujos comerciales confidenciales. Los anteriores son ejemplos de soluciones ante cual tipo de amenazas?	
+a. Gestión inadecuada del inventario.	
+b. Autorización de nivel de propiedad de objeto roto.	
+c. Falsificación de solicitudes del lado del servidor.	
+d. Autorización de nivel de función rota.	
+e. Acceso sin restricciones a flujos comerciales sensibles.
+f. Configuración incorrecta de seguridad.	
+answer = e
+
+* Para prevenir amenazas del tipo configuración incorrecta de seguridad, durante la fase de pruebas se deben validar mensajes de error. Esto es verdadero o falso?	
+a. Verdadero
+b. Falso	
+answer = a		
+		
+* Para prevenir amenazas del tipo configuración incorrecta de seguridad, durante la fase de pruebas, las mismas deben buscar que el software falle y validar los mensajes de error para asegurarse de que no revelen ningún detalle que no sea necesario.	
+a. Verdadero.
+b. Falso.	
+answer = a	
+		
+* Por qué es importante aplicar actualizaciones a los componentes de software de terceros en una aplicación?	
+a. Para mejorar la compatibilidad con otros dispositivos	
+b. Para reducir el tiempo de ejecución de la aplicación	
+c. Para evitar el uso de componentes con vulnerabilidades conocidas
+d. Para facilitar la depuración de los componentes del sistema	
+answer = c	
+		
+* Qué acción aumenta el riesgo de hackeos en los entornos informáticos?	
+a. Limitar derechos de acceso.	
+b. Ignorar principios de seguridad en instalación.
+c. Desactivar servicios innecesarios.	
+d. Prohibir acceso administrativo.	
+answer = b	
+		
+* Qué acción debe realizarse cuando se actualiza una API?	
+a. Comprobar si los cambios son compatibles con las versiones anteriores.
+b. Desactivar la seguridad mientras se actualiza.	
+c. Exponer la API sin controles de acceso.	
+d. No realizar pruebas previas.	
+answer = a	
+		
+* Qué acción puede prevenir vulnerabilidades al trabajar con bibliotecas de terceros?	
+a. No usar bibliotecas externas	
+b. Compartir bibliotecas con otros desarrolladores	
+c. Mantener las bibliotecas actualizadas
+d. Usar una sola biblioteca	
+answer = c	
+		
+* Qué acción tomaría un atacante para realizar un ataque de SSRF?	
+a. Cambiar las respuestas en el servidor.	
+b. Utilizar tokens OAuth para acceder a los recursos.	
+c. Manipular las credenciales de autenticación.	
+d. Manipular las URLs controladas por el usuario.
+answer = d	
+		
+* Qué ataque es impedido al limitar intentos de autenticación y desactivar la cuenta luego de múltiples fallos?	
+a. Fallos de integridad de software y datos	
+b. Errores de identificación y autenticación
+c. Configuración incorrecta de seguridad	
+d. Falsificación de solicitudes del lado del servidor	
+e. Inyección
+answer = b
+
+* Fallos de integridad de software y datos	
+a. Qué ataque puede aprovecharse de mensajes de error mal gestionados?	
+b. Cross-Site scripting	
+c. Fallas de manejo de excepciones
+d. Ataques AJAX	
+e. Ataques de validación de entrada	
+answer = c	
+		
+* Qué control busca evitar análisis dinámicos y modificación del código en tiempo de ejecución?	
+a. MASVS-STORAGE	
+b. MASVS-CRYPTO	
+c. MASVS-AUTH	
+d. MASVS-NETWORK	
+e. MASVS-DEVOPS	
+d. MASVS-RESILIENCE
+answer = d
+
+* Qué control intenta garantizar la integridad de la funcionalidad prevista de la aplicación, evitando modificaciones en el código y los recursos originales?	
+a. MASVS-NETWORK.	
+b. MASVS-STORAGE.	
+c. MASVS-CRYPTO.	
+d. MASVS-AUTH.	
+e. MASVS-RESILIENCE.
+f. MASVS-DEVOPS.
+answer = e
+
+* Qué control valida que el sistema operativo no ha sido comprometido?	
+a. MASVS-RESILIENCE	
+b. MASVS-PLATFORM
+c. MASVS-CODE	
+d. MASVS-CRYPTO	
+e. MASVS-CODE	
+f. MASVS-CRYPTO	
+answer = b
+
+* Qué criterio del modelo DREAD considera la posibilidad de que una amenaza pueda ser detectada por investigadores externos o atacantes?	
+a. Daño potencial.	
+b. Sistemas afectados.	
+c. Explotabilidad.	
+d. Descubrimiento.
+e. Reproducibilidad.	
+f. Usuarios afectados.
+answer = d
+
+* Qué debe considerarse al estimar el impacto técnico de una vulnerabilidad?	
+a. Complejidad del código.	
+b. Coste del desarrollo.	
+c. Tiempo estimado para solucionarla.	
+d. Confidencialidad, integridad y disponibilidad.
+answer = d	
+		
+* Qué enfoque debe utilizarse para configurar un ambiente seguro?	
+a. Eliminar servicios innecesarios.
+b. Mantener cuentas predeterminadas activas.	
+c. Otorgar derechos explícitos a todos los usuarios.	
+d. Dar acceso administrativo por defecto.	
+answer = a	
+		
+* Qué es "Unrestricted Resource Consumption"?	
+a. La protección de recursos en el servidor.	
+b. El uso de recursos solo por administradores.	
+c. El uso eficiente de recursos en una API.	
+d. El consumo de recursos sin restricciones que puede llevar a la degradación del servicio.
+answer = d	
+		
+* Qué es el análisis de código estático?	
+a. Inspección del código sin ejecutarlo.
+b. Ejecución del código en un entorno controlado.	
+c. Inspección del código mientras se ejecuta.	
+d. Eliminación de errores de compilación.	
+answer = a	
+		
+* Qué es el diseño y desarrollo de aplicaciones web?	
+a. Es el uso de tecnologías para implementar las necesidades, objetivos o ideas de los clientes en Internet.
+b. Es la creación de videojuegos para Internet.	
+c. Es la implementación de herramientas internas para empresas.	
+d. Es la creación de sitios web exclusivamente para empresas.	
+answer = a	
+		
+* Qué es un ataque de inyección en el contexto de APIs?	
+a. Un ataque que inserta comandos maliciosos a través de entradas de la API.
+b. Un ataque que realiza solicitudes a un servidor interno.	
+c. Un ataque que deshabilita un servidor.	
+d. Un ataque que busca robar claves API.	
+answer = a	
+		
+* Qué estrategia es esencial para asegurar la calidad del producto en el desarrollo de aplicaciones?	
+a. Pruebas unitarias y de integración.
+b. Solo realizar pruebas manuales.	
+c. Dejar el aseguramiento a QA.	
+d. Enfocarse solo en pruebas UI.	
+answer = a	
+		
+* Qué función realiza la administración de configuraciones en el desarrollo de software?	
+a. Gestionar solo cambios en la base de datos.	
+b. Proteger exclusivamente bibliotecas del sistema.	
+c. Limitar revisiones técnicas.	
+d. Supervisar artefactos y componentes.
+answer = d	
+		
+* Qué herramienta o proceso ayuda a garantizar que los datos recolectados son esenciales para el propósito del modelo?	
+a. Auditorías periódicas.
+b. Pruebas de caja negra.	
+c. Sistemas de cifrado robusto.	
+d. Dashboards en tiempo real.	
+answer = a	
+		
+* ¿Qué herramienta OWASP puede ayudar a identificar vulnerabilidades en el entorno donde opera la IA?	
+a. OWASP AI-Test.
+b. OWASP Model-Scan.	
+c. OWASP Dependency-Check.	
+d. OWASP ZAP.	
+answer = a	
+		
+* ¿Qué herramienta se recomienda para proteger aplicaciones web de tráfico malicioso?	
+a. IDS	
+b. Firewall de red	
+c. Cortafuegos de aplicaciones web (WAF)
+d. Antivirus	
+answer = c	
+		
+* ¿Qué implica el control MASVS-CÓDIGO para la seguridad de la aplicación?	
+a. Proteger las contraseñas utilizando técnicas de encriptación fuerte.	
+b. Permitir el acceso sin restricciones a los archivos de la aplicación.	
+c. Mejorar la interfaz gráfica de la aplicación.	
+d. Validar y desinfectar todas las entradas no confiables antes de usarlas.
+answer = d	
+		
+* Qué medida ayuda a garantizar seguridad al actualizar imágenes de contenedor?	
+a. Usar imágenes no verificadas	
+b. Ignorar parches del sistema operativo	
+c. Mantener versiones desactualizadas	
+d. Asegurarse de que runtime y SO estén actualizados
+e. Mantener versiones desactualizadas	
+answer = d
+	
+* Qué medida ayuda a prevenir un ataque de DoS contra una API?	
+a. Aplicar limitación de velocidad	X
+b. Aumentar el número de endpoints	
+c. Permitir múltiples solicitudes por segundo	
+d. Quitar autenticación	
+answer = a
+		
+* Qué medida evita la amenaza del tipo inyección al validar entradas y separar datos de comandos?	
+a. Verdadero
+b. Falso	
+answer = a	
+		
+* Qué metodología se utiliza para comprobar los requisitos de seguridad en todas las etapas del proceso de desarrollo para garantizar su integración?	
+a. COCOMO.	
+b. S-SDLC.	
+c. STRIDE.	
+d. DEVSECOPS.
+e. DREAD.	
+f. DEVOPS.	
+answer = d
+
+* Qué mide 'Reproducibilidad' en el modelo DREAD?	
+a. La cantidad de daño que la amenaza puede causar.	
+b. La cantidad de personas que descubrirán la amenaza.	
+c. La facilidad con que puede ser recreada la amenaza.	X
+d. La gravedad de la amenaza.	
+answer = c	
+		
+* Qué ocurre cuando un servidor permite solicitudes maliciosas sin validación en una API?	
+a. La API realiza un análisis de tráfico.	
+b. Se produce un SSRF.
+c. Se produce un ataque DDoS.	
+d. La API no responde.	
+answer = b
+		
+* Qué permite el modelado de amenazas durante el desarrollo de software?	
+a. Ignorar vulnerabilidades de baja probabilidad.	
+b. Identificar problemas de seguridad en diseño.
+c. Evitar revisiones manuales.	
+d. Aumentar el tiempo de desarrollo.	
+answer = b	
+		
+* Qué política debe implementarse para asegurar la eliminación adecuada de los datos antiguos?	
+a. Revisión de métricas clave.	
+b. Anonimización de datos.	
+c. Políticas de retención de datos.
+d. Auditorías regulares.	
+answer = c	
+		
+* Qué práctica asegura que los datos de entrenamiento representen adecuadamente a la población?	
+a. Validación de conjuntos de datos.
+b. Uso de dashboards en tiempo real.	
+c. Pruebas de caja negra.	
+d. Implementación de OWASP ZAP.	
+answer = a	
+		
+* Qué práctica ayuda a garantizar que un modelo de IA sea resistente a manipulaciones externas?	
+a. Utilizar OWASP ZAP.	
+b. Implementar pruebas adversariales.
+c. Supervisar métricas clave.	
+d. Realizar pruebas de caja blanca.	
+answer = b	
+		
+* Qué principio de seguridad se viola al otorgar derechos administrativos durante la instalación de software?	
+a. Principio de menor privilegio.
+b. Revisión de configuraciones.	
+c. Separación de funciones.	
+d. Principio de diseño seguro.	
+answer = a	
+		
+* Qué principio establece que el acceso debe ser permitido solo a usuarios específicos?	
+a. Modelado de amenazas.	
+b. Hardening de seguridad.	
+c. Principio de mínimo privilegio.
+d. Validación de entradas.	
+answer = c	
+		´
+* Qué requisito de seguridad protege contra la divulgación no autorizada de información sensible?	
+a. Transparencia	
+b. Disponibilidad	
+c. Integridad	
+d. Confidencialidad
+answer = d	
+		
+* Qué se busca equilibrar en la arquitectura de seguridad?	
+a. Amenazas y oportunidades.	
+b. Seguridad y rendimiento.
+c. Infraestructura y software.	
+d. Costos y ganancias.	
+answer = b
+		
+* Qué se considera como parte de la seguridad de una base de datos?	
+a. Solo la protección de los datos	
+b. Solo el servidor de base de datos	
+c. Protección de los datos, DBMS y aplicaciones asociadas
+d. Protección del software de la aplicación	
+answer = c	
+		
+* Qué se necesita para garantizar los requisitos de auditoría?	
+a. Rastrear y registrar acciones específicas.
+b. Monitorear exclusivamente usuarios no autorizados.	
+c. Hacer cumplir contraseñas seguras.	
+d. Deshabilitar modificaciones.	
+answer = a	
+		
+* Qué significa "Daño Potencial" en el modelo DREAD?	
+a. El tiempo necesario para descubrir la amenaza.	
+b. La facilidad con que puede ocurrir la amenaza.	
+c. La magnitud del daño causado si se materializa la amenaza.
+d. El número de usuarios afectados.	
+answer = c		
+		
+* Qué significa desplazar la seguridad a la izquierda en el desarrollo de software?	
+a. Corregir problemas después del despliegue.	
+b. Realizar pruebas en producción.	
+c. Focalizar la seguridad desde fases tempranas.
+d. Evaluar solo errores críticos.	
+answer = c	
+		
+* Qué sistema ayuda a garantizar la seguridad del clúster en Kubernetes?	
+a. Reducir el tráfico entrante	
+b. Dar permisos de administrador a todos	
+c. Aplicar control de acceso basado en roles (RBAC)
+d. Compartir secretos entre contenedores	
+answer = c	
+		
+* Qué soluciones se implementan ante consumo de recursos sin restricciones?	
+a. Consumo de recursos sin restricciones
+b. Configuración incorrecta de seguridad	
+c. Falsificación de solicitudes del lado del servidor	
+d. Acceso sin restricciones a flujos comerciales sensibles	
+e. Gestión inadecuada del inventario	
+f. Autorización de nivel de propiedad de objeto roto	
+answer = a
+
+* Qué son los "secretos" en el contexto de la gestión de secretos?	
+a. Contraseñas, claves de cifrado y otros elementos utilizados en la autenticación y autorización.
+b. Protocolos de seguridad de la red.	
+c. Herramientas de desarrollo de software.	
+d. Información sobre los clientes de la empresa.	
+answer = a	
+		
+* Qué técnica debe emplearse para proteger los datos durante el tiempo que se almacenan, según OWASP?	
+a. Sistemas de monitoreo en tiempo real.	
+b. Técnicas de cifrado robusto.
+c. Pruebas de caja blanca.	
+d. Pruebas adversariales.	
+answer = b	
+		
+* Qué tipo de ataque se basa en el robo de credenciales a través de un correo electrónico?	
+a. Troyano.	
+b. Whaling.	
+c. Ransomware.	
+d. Phishing.
+answer = d	
+		
+* Qué tipo de control está diseñado específicamente para evitar ataques a los datos?	
+a. Controles de acceso físico.	
+b. Controles de ciberseguridad.
+c. Controles en la nube.	
+d. Controles de seguridad física.	
+answer = b	
+		
+* Qué tipo de errores deben evitarse en los registros de error de una API?	
+a. Mostrar información detallada sobre el servidor y la base de datos.
+b. Mensajes de error genéricos.	
+c. Registrando solo información de tráfico.	
+d. No registrar errores.	
+answer = a	
+		
+* Qué tipo de interfaz en sistemas de IA permite gestionar consentimiento y eliminación de datos?	
+a. Revisión de seguridad	
+b. Analizar uso de datos	
+c. Reportar vulnerabilidades	
+d. Interfaz para solicitudes de eliminación de datos
+e. Reportar vulnerabilidades	
+answer = d
+	
+* Qué tipo de malware recopila información sensible del usuario, como números de tarjetas de crédito?	
+a. Inyección SQL.	
+b. Ransomware.	
+c. Troyano.	
+d. Spyware.
+answer = d	
+		
+* Qué tipo de prueba detecta licencias y vulnerabilidades en dependencias de terceros?	
+a. DAST	
+b. SAST	
+c. Pentesting	
+d. Fuzzing	
+e. SCA	X
+answer = e
+	
+* Qué tipo de prueba permite detectar vulnerabilidades y problemas de licencias en bibliotecas de terceros?	
+a. Pruebas de aceptación del usuario	
+b. DAST	
+c. SAST	
+d. Software Composition Analysis (SCA)	X
+answer = d	
+		
+* Qué tipo de prueba se enfoca en validar el comportamiento del sistema ante las acciones que realiza un atacante?	
+a. Pruebas de penetración.
+b. Pruebas de rendimiento.	
+c. Pruebas de seguridad.	
+d. Pruebas de regresión.	
+e. Pruebas unitarias.	
+f. Pruebas lógicas.
+answer = a
+
+* Qué tipo de vulnerabilidad ocurre si un atacante accede, modifica o elimina propiedades de objetos?	
+a. Autenticación rota	
+b. Falsificación de solicitudes	
+c. Inyección de comandos	
+d. Autorización de nivel de propiedad de objeto rota
+e. Inyección de comandos	
+answer = d
+	
+* Qué tipo de vulnerabilidad permite que el atacante pueda acceder, modificar, agregar y eliminar valores de propiedad a los objetos?	
+a. Gestión inadecuada del inventario.	
+b. Configuración incorrecta de seguridad.	
+c. Consumo de recursos sin restricciones.	
+d. Autorización de nivel de propiedad de objeto roto.
+e. Acceso sin restricciones a flujos comerciales sensibles.	
+f. Falsificación de solicitudes del lado del servidor.	
+answer = d
+
+* Qué vulnerabilidad permite al atacante acceder a objetos de datos sin permiso?	
+a. Validación de entrada insuficiente	
+b. Falsificación de solicitudes del lado del servidor	
+c. Gestión inadecuada del inventario	
+d. Autorización de nivel de objeto roto
+answer = d	
+		
+* Qué vulnerabilidad puede permitir a un atacante robar información de otros usuarios en una página web?	
+a. Escaneo de contenido.	
+b. Validación débil de contraseñas.	
+c. Fuzzing dinámico.	
+d. Cross-Site scripting.
+answer = d	
+		
+* Se produce cuando las API procesan solicitudes de direcciones URL proporcionadas por el usuario y obtienen recursos sin validar autoridad.	
+a. Configuración incorrecta de seguridad	
+b. Explotación de solicitud del lado del servidor
+c. Gestión inadecuada de secretos	
+d. Acceso no autorizado a flujos comerciales sensibles	
+e. Autorización de nivel de función rota	
+f. Autorización de nivel de jerarquía de objeto rota	
+answer = b
+
+* Se produce porque las organizaciones tienen multitud de API internas y de terceros que se inventarían, documentan y administran incorrectamente.	
+a. Gestión inadecuada del inventario.
+b. Autorización de nivel de función rota.	
+c. Autorización de nivel de propiedad de objeto roto.	
+d. Acceso sin restricciones a flujos comerciales sensibles.	
+e. Falsificación de solicitudes del lado del servidor.	
+f. Configuración incorrecta de seguridad.	
+answer = a
+
+* Se producen cuando las prácticas recomendadas de seguridad no se siguen correctamente o la seguridad no se refuerza correctamente.	
+a. Autorización de nivel de propiedad de objeto roto.	
+b. Acceso sin restricciones a flujos comerciales sensibles.	
+c. Gestión inadecuada del inventario.	
+d. Configuración incorrecta de seguridad.
+e. Falsificación de solicitudes del lado del servidor.	
+f. Autorización de nivel de función rota.
+answer = d
+
+* Se producen cuando las prácticas recomendadas de seguridad no se siguen correctamente o la seguridad no se refuerza correctamente. Algunos ejemplos incluyen los parches no aplicados, la exposición no deseada de registros de depuración, características / servicios innecesarios, implementación incorrecta de la política CORS, verbos HTTP habilitados innecesarios, etc.	
+a. Autorización de nivel de propiedad de objeto roto.	
+b. Gestión inadecuada del inventario.	
+c. Autorización de nivel de función rota.	
+d. Configuración incorrecta de seguridad.
+e. Falsificación de solicitudes del lado del servidor.	
+f. Acceso sin restricciones a flujos comerciales sensibles.	
+answer = d
+
+* Se trata de un análisis manual exhaustivo realizado por un individuo distinto al que desarrolló el código; tiene como propósito detectar problemas de sintaxis y posibles vulnerabilidades.	
+a. Pruebas de rendimiento	
+b. Pruebas de regresión	
+c. Revisión de código
+d. Fuzzing	
+e. Pruebas de penetración	
+f. Pruebas lógicas	
+answer = c
+
+* Según OWASP, cómo afecta la transparencia en IA la confianza de los usuarios?	
+a. Reduce el sesgo.	
+b. Disminuye la cantidad de datos recolectados.	
+c. Permite mantener el almacenamiento seguro.	
+d. Aumenta la confianza en la seguridad del sistema.
+answer = d	
+		
+* Según OWASP, cómo se puede minimizar el sesgo en los modelos de IA?	
+a. Implementando un dashboard de supervisión.	
+b. Utilizando conjuntos de datos diversos.
+c. Entrenando con datos limitados.	
+d. Aplicando pruebas adversariales.	
+answer = b	
+		
+* Si no se gestionan con cuidado, un cliente de la API podría tener acceso a recursos que no deberían estar a su disposición, lo que aumenta la posibilidad de que se produzca una fuga de datos.	
+a. Confidencialidad
+b. Logging	
+c. Autenticación	
+d. Monitoreo	
+e. Autorización	
+f. Disponibilidad
+answer = a
+
+* Técnica utilizada para evitar la ingeniería inversa y piratería del software, haciendo que el código fuente sea ilegible.	
+a. Copia de seguridad	
+b. Ofuscación	X
+c. Código genérico	
+d. Actualización	
+e. Hashes	
+f. Cifrado asimétrico
+answer = b
+
+* Un administrador de sistemas, gracias a la información que captura el sistema, como lo son eventos de inicio de sesión, el registro de actividad y demás, es capaz de ver qué acciones realiza cada usuario. Considerando que un individuo intentase negar sus acciones, qué requerimiento de seguridad sería capaz de brindar el registro de actividad?	
+a. Autentificación.	
+b. Disponibilidad.	
+c. Confidencialidad.	
+d. Integridad.	
+e. No repudio.
+f. Autorización.
+answer = e
+
+* Un atacante inyecta malware en una aplicación móvil durante el desarrollo. Luego, el atacante firma la aplicación con un certificado válido y lo distribuye a la tienda de aplicaciones, evitando los controles de seguridad de la tienda. Los usuarios adquieren la aplicación, que roba sus credenciales y otros datos confidenciales. Qué amenaza se describe en el ejemplo anterior?	
+a. Protecciones binarias insuficientes.	
+b. Comunicación insegura.	
+c. Seguridad inadecuada de la cadena de suministro.
+d. Controles de privacidad inadecuados.	
+e. Uso inadecuado de credenciales.	
+f. Validación de entrada/salida insuficiente.	
+answer = c
+
+* Un atacante obtiene acceso físico al dispositivo de un usuario y extrae las credenciales almacenadas de la aplicación. El atacante utiliza las mismas para obtener acceso no autorizado a la cuenta del usuario. Qué amenaza se describe en el ejemplo anterior?	
+a. Protecciones binarias insuficientes.	
+b. Uso inadecuado de credenciales.
+c. Comunicación insegura.	
+d. Controles de privacidad inadecuados.	
+e. Validación de entrada/salida insuficiente.	
+f. Seguridad inadecuada de la cadena de suministro.	
+answer = b
+
+* Un atacante realiza múltiples intentos de acceso a la API utilizando contraseñas comunes. Qué vulnerabilidad está aprovechando?	
+a. Acceso no autorizado a flujos sensibles.	
+b. Consumo de recursos sin restricción.	
+c. Autenticación rota.
+d. Autorización de objeto rota.	
+answer = c
+		
+* Un atacante se aprovecha de un cifrado débil utilizado para proteger datos en la aplicación móvil. A qué vulnerabilidad corresponde?	
+a. Autenticación insegura.	
+b. Configuración incorrecta de seguridad.	
+c. Criptografía insuficiente.
+d. Validación insuficiente.	
+answer = c	
+		
+* Un atacante usa un proxy para manipular la comunicación entre la aplicación móvil y el servidor. Qué vulnerabilidad está siendo explotada?	
+a. Configuración incorrecta de seguridad	
+b. Comunicación insegura
+c. Criptografía insuficiente	
+d. Almacenamiento inseguro de datos	
+answer = b	
+		
+* Un atacante utiliza ingeniería inversa para descubrir una clave API en una aplicación móvil. Qué tipo de vulnerabilidad está explotando?	
+a. Autenticación insegura.	
+b. Protección binaria insuficiente.
+c. Almacenamiento inseguro de datos.	
+d. Validación insuficiente.	
+answer = b	
+		
+* Un atacante utiliza un algoritmo de cifrado obsoleto para acceder a información confidencial. Qué vulnerabilidad está siendo explotada?	
+a. Configuración incorrecta de seguridad.	
+b. Comunicación insegura.	
+c. Criptografía insuficiente.
+d. Autenticación insegura.	
+answer = c	
+		
+* Un cliente necesita que su app móvil sea accesible en diferentes tipos de dispositivos, incluyendo tabletas, teléfonos y smartwatches. Qué estrategia se recomienda?	
+a. Solo para teléfonos móviles.	
+b. Desarrollo web responsivo.	
+c. Desarrollo híbrido.
+d. Desarrollo de apps específicas para cada dispositivo.	
+answer = c	
+		
+* Un cliente necesita una app que maneje grandes cantidades de datos, pero no quiere que los datos se guarden localmente. Qué solución es más adecuada?	
+a. Solo almacenar datos temporales.	
+b. No almacenar datos.	
+c. Usar almacenamiento en la nube.
+d. Guardar los datos en el dispositivo.	
+answer = c
+		
+* Un contenedor ejecuta un servicio con privilegios de administrador. Qué es recomendable hacer para mejorar la seguridad?	
+a. Deshabilitar el acceso de red para el contenedor.	
+b. Ejecutar el contenedor con privilegios mínimos necesarios.
+c. Mantener el contenedor con privilegios elevados para facilitar la administración.	
+d. Permitir que el contenedor acceda a todas las APIs.	
+answer = b	
+		
+* Un contenedor tiene configurado un puerto expuesto innecesario. Qué medida de seguridad debe tomar el equipo?	
+a. No cambiar nada si no afecta al rendimiento.	
+b. Cerrar o restringir el acceso al puerto.
+c. Dejar el puerto abierto por conveniencia.	
+d. Solo restringir el puerto para el contenedor afectado.	
+answer = b	
+		
+* Un desarrollador configura incorrectamente los permisos de una aplicación, lo que permite el acceso no autorizado. Qué vulnerabilidad se explota?	
+a. Configuración incorrecta de seguridad.
+b. Criptografía insuficiente.	
+c. Autenticación insegura.	
+d. Almacenamiento inseguro de datos.	
+answer = a	
+		
+* Un desarrollador ha configurado una API de manera que cualquier usuario puede acceder a objetos de datos sin autorización. A qué vulnerabilidad está expuesto el sistema?	
+a. Consumo de recursos sin restricción.	
+b. Autorización de objeto rota.
+c. Autenticación rota.	
+d. Acceso no autorizado a flujos sensibles.	
+answer = b	
+		
+* Un desarrollador no está seguro de si su código contiene errores de seguridad. Qué herramienta debería utilizar para revisarlo?	
+a. Revisar el código manualmente sin ninguna herramienta.	
+b. Herramientas de pruebas estáticas de seguridad (SAST).
+c. Desplegar el código sin hacer ninguna revisión.	
+d. Hacer pruebas de seguridad solo después del lanzamiento.	
+answer = b
+		
+* Un desarrollador no valida correctamente las entradas de los usuarios, lo que permite la ejecución de un ataque de inyección SQL. Qué vulnerabilidad está presente?	
+a. Protección binaria insuficiente.	
+b. Comunicación insegura.	
+c. Validación insuficiente.
+d. Autenticación insegura.	
+answer = c	
+		
+* Un desarrollador nota que su aplicación móvil es demasiado lenta al cargar imágenes de alta calidad. Cuál sería una solución eficiente?	
+a. Usar almacenamiento en caché basado en la nube.
+b. Limitar el uso de la aplicación.	
+c. Eliminar imágenes de la app.	
+d. Reducir la calidad de las imágenes.	
+answer = a	
+		
+* Un desarrollador quiere que una app funcione con una gran cantidad de usuarios sin afectar el rendimiento del dispositivo. Cuál es la mejor solución?	
+a. Limitar las funcionalidades de la app.	
+b. Usar procesamiento en la nube.
+c. Aumentar la capacidad del dispositivo.	
+d. Optimizar el código en el dispositivo.	
+answer = b	
+		
+* Un director es engañado por un correo falso de su secretaria solicitando accesos. Qué tipo de ataque es?	
+a. Phishing
+b. Man in the Middle	
+c. Whaling	
+d. Keylogger	
+e. PUP	
+f. Troyano	
+answer = a
+
+* Un equipo de desarrollo de IA está trabajando en un modelo que utiliza datos de clientes para realizar predicciones. Los datos utilizados son incompletos y contienen algunos errores. Qué consecuencia podría tener esta falta de precisión en los datos durante el entrenamiento del modelo?	
+a. El modelo no tendrá ningún problema y será confiable.	
+b. El modelo podría tomar decisiones incorrectas y poco confiables.
+c. El modelo mejorará al aprender de los errores.	
+d. El modelo se volverá más preciso con el tiempo.	
+answer = b	
+		
+* Un equipo de desarrollo necesita controlar los cambios en su infraestructura y evitar inconsistencias durante la implementación. Qué beneficio de la Infraestructura como Código (IaC) resuelve este desafío?	
+a. Eliminar la necesidad de scripts automatizados.	
+b. Crear configuraciones auditables y controladas por versiones.
+c. Implementar herramientas de análisis dinámico.	
+d. Desplegar recursos sin necesidad de control de acceso.	
+answer = b	
+		
+* Un equipo de desarrollo quiere asegurarse de que las políticas de seguridad estén actualizadas antes de la implementación de una aplicación. Qué debe hacer?	
+a. Solo hacer pruebas de seguridad a posteriori.	
+b. Implementar sin hacer ninguna revisión de seguridad.	
+c. Ignorar las políticas de seguridad hasta después del despliegue.	
+d. Revisar todas las políticas de seguridad antes del despliegue.
+answer = d	
+		
+* Un equipo de desarrollo utiliza datos financieros históricos para entrenar un modelo de IA que predice tendencias de mercado. Antes del entrenamiento, aplican técnicas de normalización y eliminan valores atípicos para garantizar que los datos sean consistentes y precisos. Qué buena práctica están aplicando?	
+a. Limpieza de datos.
+b. Uso de datos sintéticos.	
+c. Consentimiento explícito.	
+d Auditorías periódicas.	
+answer = a	
+		
+* Un equipo de DevOps está utilizando un servicio de Kubernetes en la nube. Qué es esencial para la seguridad?	
+a. Dejar el acceso sin restricciones para facilitar la administración.	
+b. No usar ninguna política de seguridad, ya que Kubernetes es seguro por defecto.	
+c. Utilizar una única cuenta de usuario para todas las operaciones.	
+d. Aplicar control de acceso basado en roles (RBAC) en el clúster de Kubernetes.
+answer = d	
+		
+* Un equipo de DevOps implementa contenedores sin realizar auditorías de seguridad regulares. Qué problema puede surgir a largo plazo?	
+a. Introducción de vulnerabilidades no detectadas y mayor riesgo de ataques.
+b. El equipo ahorrará tiempo y recursos.	
+c. Los contenedores funcionarán más rápido sin auditorías.	
+d. Las vulnerabilidades no afectarán el rendimiento de los contenedores.	
+answer = a	
+		
+* Un equipo de DevOps necesita identificar vulnerabilidades asociadas con la autenticación de usuarios y la inyección SQL en su aplicación. Qué herramientas debería usar en el pipeline?	
+a. Plataformas de administración de artefactos.	
+b. Herramientas de prueba estática de aplicaciones (SAST).	
+c. Herramientas de prueba dinámica de aplicaciones (DAST).
+d. Consolas de gestión de la nube.	
+answer = c	
+		
+* Un equipo de TI está lidiando con múltiples errores que se detectan demasiado tarde en el ciclo de desarrollo. Qué proceso deben adoptar para detectar estos errores más temprano?	
+a. Realizar solo pruebas de integración.	
+b. Esperar hasta el final del ciclo para realizar pruebas.	
+c. Hacer pruebas solo en el entorno de producción.	
+d. Implementar pruebas automáticas durante el desarrollo (Continuous Testing).
+answer = d	
+		
+* Un equipo decide utilizar contenedores sin cifrado. Cuál es el riesgo?	
+a. Exposición de datos confidenciales y acceso no autorizado.
+b. Los contenedores serán más fáciles de manejar.	
+c. No habrá vulnerabilidades.	
+d. El contenedor será más rápido.	
+answer = a		
+		
+* Un equipo detecta una vulnerabilidad en un contenedor. Qué debería hacer primero para abordar el problema de forma segura?	
+a. Cambiar todas las configuraciones sin verificar la imagen.	
+b. Asegurar que la imagen base provenga de una fuente confiable.
+c. Ignorar la vulnerabilidad hasta que afecte a la producción.	
+d. Reemplazar el contenedor sin investigar.	
+answer = b
+		
+* Un equipo tiene problemas con la lentitud en la provisión de infraestructura debido a la intervención manual constante. Qué solución puede adoptar?	
+a. Reemplazar todos los sistemas automáticos por procesos manuales.	
+b. Evitar realizar pruebas en la infraestructura.	
+c. Continuar con la provisión manual, pero incrementando el personal.	
+d. Implementar Infraestructura como Código (IaC).
+answer = d	
+		
+* Un equipo utiliza herramientas de automatización en la nube. Qué deberían proteger para evitar ataques?	
+a. Los contenedores únicamente.	
+b. Las claves SSH solamente.	
+c. Los scripts de automatización y las herramientas de aprovisionamiento.
+d. Las bases de datos en la nube.	
+answer = c
+		
+* Un modelo de IA predice comportamiento delictivo usando perfiles demográficos. Por qué podría ser ilegal según la Ley Europea de IA?	
+a. Los datos no están anonimizados	
+b. No se utiliza aprendizaje federado	
+c. No se realizó un análisis ético	
+d. Involucra un alto riesgo para los derechos humanos y la equidad social
+answer = d	
+		
+* Un modelo de IA que analiza datos personales utiliza información recopilada sin informar previamente a los usuarios ni detallar la base legal para el procesamiento. Qué se está violando?	
+a. El principio de aprendizaje federado.	
+b. La anonimización de datos.	
+c. Las regulaciones sobre especificación de finalidad.
+d. La restricción del acceso a los datos.	
+answer = c	
+		
+* Un modelo de IA que se utiliza para la clasificación de correos electrónicos comienza a fallar al identificar spam debido a cambios sutiles en el formato de los correos, lo que hace que el modelo no pueda distinguir correctamente entre correos legítimos y no deseados. Cuál es la causa probable de este fallo?	
+a. Exposición a datos adversariales.	
+b. Baja robustez del modelo.
+c. Envenenamiento de datos.	
+d. Pruebas de vulnerabilidad.	
+answer = b	
+		
+* Un sistema API expone un gran número de solicitudes que sobrecargan el servidor y provocan lentitud en el sistema. A qué vulnerabilidad se está enfrentando?	
+a. Acceso no autorizado a flujos sensibles	
+b. Consumo de recursos sin restricción
+c. Autorización de función rota	
+d. Autenticación rota	
+answer = b	
+		
+* Un usuario se encuentra trabajando de forma normal en su dispositivo, termina su jornada y apaga el equipo. Al día siguiente, el usuario nota que cuando intenta acceder a los documentos en los que estaba trabajando, ahora tienen una extensión que él desconoce. Revisando el equipo y su correo, ve un mensaje pidiendo un pago para desbloquear el acceso. Con base en este escenario, qué tipo de malware fue usado para atacar al usuario?	
+a. Ransomware.
+b. Phishing.	
+c. PUP.	
+d. Adware.	
+e. Whaling.	
+f. Criptojacking.
+answer = a
+
+* Una API permite a los usuarios enviar solicitudes sin un límite adecuado, lo que provoca un ataque de DoS. Qué vulnerabilidad está siendo explotada?	
+a. Consumo de recursos sin restricción.
+b. Autenticación rota.	
+c. Acceso no autorizado a flujos sensibles.	
+d. Autorización de objeto rota.	
+answer = a	
+		
+* Una aplicación de reconocimiento facial recopila datos de los rostros de sus usuarios para autenticar accesos. Posteriormente, esta información se usa para crear perfiles demográficos sin consentimiento previo. Qué principio fundamental se está ignorando?	
+a. La seguridad en el almacenamiento de datos personales.	
+b. La auditoría de los datos recopilados.	
+c. La especificación de finalidad y consentimiento informado.
+d. El uso de aprendizaje federado para proteger la privacidad.	
+answer = c		
+		
+* Una aplicación de reconocimiento facial recopila datos de los rostros de sus usuarios para autenticar accesos. Posteriormente, esta información se usa para crear perfiles demográficos sin consentimiento previo. Qué principio fundamental se está ignorando?	
+a. El uso de aprendizaje federado para proteger la privacidad.	
+b. La especificación de finalidad y consentimiento informado.
+c. La seguridad en el almacenamiento de datos personales.	
+d. La auditoría de los datos recopilados.	
+answer = b	
+		
+* Una aplicación está configurada de tal manera que un usuario de forma convencional tiene los permisos mínimos para realizar sus actividades diarias; de ser necesario, el usuario puede asumir permisos más elevados durante un periodo. Qué características hacen referencia al enunciado anterior?	
+a. Integridad.	
+b. JEA.
+c. Atomicidad.	
+d. No repudio.	
+e. Disponibilidad.	
+f. JIT.	
+answer = b
+
+* Una empresa busca una solución para reducir la carga de datos en los dispositivos móviles, transfiriendo todo el procesamiento a servidores remotos. Qué tecnología se recomienda?	
+a. Conexión con servicios en la nube.
+b. Procesamiento en el dispositivo.	
+c. Uso de gráficos avanzados.	
+d. Desarrollo de apps nativas.	
+answer = a	
+		
+* Una empresa desarrolla un modelo de IA para analizar datos financieros y utiliza una base de datos que incluye información personal de los usuarios. Un cliente solicita eliminar todos sus datos personales de los sistemas, incluyendo el conjunto de datos de entrenamiento del modelo. Qué derecho está ejerciendo el cliente?	
+a. Derecho de acceso/portabilidad.	
+b. Derecho de supresión.
+c. Derecho de oposición.	
+d. Derecho de corrección.	
+answer = b	
+		
+* Una empresa está desarrollando un modelo de IA para la contratación de personal y ha usado un conjunto de datos históricamente sesgado. Qué problema podría surgir al entrenar el modelo con estos datos?	
+a. El modelo podría perpetuar desigualdades o tomar decisiones injustas.
+b. El modelo aprenderá solo de los mejores candidatos.	
+c. El modelo tomará decisiones justas y equilibradas.	
+d. El modelo no tendrá efectos negativos en la calidad de las decisiones.	
+answer = a	
+		
+* Una empresa implementa distintas medidas de seguridad en cada una de las capas que componen a la aplicación para prevenir una posible infiltración o exfiltración de datos. Dado lo anterior, cómo se conoce este principio de seguridad?	
+a. Defensa en profundidad.
+b. Fallo seguro.	
+c. Menor privilegio.	
+d. Economía de mecanismos.	
+e. Separación de responsabilidades.	
+f. Diseño abierto.	
+answer = a
+
+* Una empresa implementa un modelo de IA que no ha sido entrenado con datos precisos. Qué riesgo principal enfrenta la empresa?	
+a. El modelo será más seguro y eficiente.	
+b. El modelo tomará decisiones basadas en patrones defectuosos, lo que podría generar errores.	X
+c. El modelo se ajustará automáticamente a los datos erróneos sin afectar los resultados.	
+d. El modelo será 100% confiable desde el inicio.	
+answer = b
+		
+* Una empresa quiere una app para Android e iOS desde una sola base de código. Qué enfoque debe usar?	
+a. Desarrollo nativo para cada plataforma	
+b. Solo desarrollo para Android	
+c. Aplicación web	
+d. Desarrollo híbrido
+answer = d	
+		
+* Una empresa utiliza una plataforma de gestión de consentimiento para almacenar y gestionar los permisos de los usuarios. Qué beneficio tiene usar esta plataforma?	
+a. Facilita la recopilación de datos personales sin necesidad de consentimiento.	
+b. Elimina la necesidad de revisar la privacidad de los datos.	
+c. Ayuda a las organizaciones a gestionar el consentimiento de forma segura y conforme a las regulaciones.
+d. Permite que los datos se compartan sin restricciones.	
+answer = c	
+		
+* Una organización descubre que uno de sus contenedores tiene una vulnerabilidad conocida en la imagen base. Qué acción debe tomar para solucionar este problema?	
+a. Asegurar que la imagen base provenga de una fuente confiable.
+b. Cambiar todas las configuraciones sin verificar la imagen.	
+c. Reemplazar el contenedor sin investigar.	
+d. Ignorar la vulnerabilidad hasta que afecte a la producción.	
+answer = a	
+		
+* Una organización descubre que varios de sus artefactos de compilación obsoletos están ocupando espacio en su repositorio de CI. Qué medida debería tomar para gestionar eficientemente estos artefactos?	
+a. Especificar las condiciones para eliminar artefactos en función del tiempo o espacio disponible.
+b. Migrar todos los artefactos a un repositorio público.	
+c. Implementar pruebas DAST durante el ciclo de vida de los artefactos.	
+d. Automatizar los scripts de aprovisionamiento de infraestructura.	
+answer = a
+		
+* Una organización está desarrollando un modelo de IA para predicción de comportamiento delictivo basado en perfiles demográficos. Esto entra en conflicto con normativas legales como la Ley Europea de IA. Cuál es la razón principal por la que esta práctica podría ser considerada ilegal?	
+a. No se utiliza aprendizaje federado para proteger la privacidad de los datos.	
+b. Involucra un alto riesgo para los derechos humanos y la equidad social.
+c. No se realizó un análisis ético del proyecto.	
+d. Los datos no están anonimizados.	
+answer = b	
+		
+* Una organización que opera en la nube detecta un incremento de ataques dirigidos hacia su consola de gestión. Qué medida debería implementar para proteger este recurso crítico?	
+a. Controlar estrictamente el acceso con privilegios a la consola de gestión.
+b. Automatizar los scripts de aprovisionamiento.	
+c. Realizar pruebas de aplicaciones estáticas (SAST).	
+d. Utilizar claves SSH incrustadas para asegurar la consola.	
+answer = a	
+		
+* Una organización que opera en la nube detecta un incremento de ataques dirigidos hacia su consola de gestión. Qué medida debería implementar para proteger este recurso crítico?	
+a. Utilizar claves SSH incrustadas para asegurar la consola.	
+b. Realizar pruebas de aplicaciones estáticas (SAST).	
+c. Automatizar los scripts de aprovisionamiento.	
+d. Controlar estrictamente el acceso con privilegios a la consola de gestión.
+answer = d	
+		
+* Una startup utiliza datos financieros de clientes recopilados para análisis de riesgo crediticio en el entrenamiento de un modelo de IA para segmentar mercados publicitarios. La empresa afirma que los datos fueron anonimizados. Qué medida adicional debió tomarse para cumplir con las regulaciones de privacidad?	
+a. Usar un sistema de almacenamiento descentralizado para los datos.	
+b. Implementar auditorías para verificar el uso de los datos.	
+c. Solicitar explícitamente el consentimiento del cliente para reutilizar sus datos.
+d. Limitar el acceso a los datos solo a quienes lo necesiten para el propósito inicial.	
+answer = c	
+		
+* Una tienda de alimentos quiere que los usuarios puedan escanear códigos de barras con la cámara del teléfono. Qué tipo de desarrollo sería más adecuado?	
+a. Aplicación web simple.	
+b. Basado en la nube.	
+c. Nativo.
+d. Híbrido.	
+answer = c	
+		
+* Con el fin de lograr prevenir la amenaza del tipo Falsificación de solicitudes del lado del servidor, decide realizar un inventario de las versiones de los componentes utilizados, además de inspeccionar el código de forma estática. Esto logrará impedir que se materialice la amenaza?	
+a. Verdadero	
+b. Falso
+answer = b			
+		
+* Un modelo de IA que se utiliza para la clasificar correos electrónicos esta dando resultados inconsistentes debido a errores en el conjunto de datos de entrenamiento. Tras una auditoria se decide implementar revisiones periódicas de los datos para evitar futuros problemas. Que medida están adoptando los desarrolladores ?	
+a. Implementación de pruebas de sesgo	
+b. Auditorias periódicas de datos.
+c. Entrenamiento adversarial.	
+d. Uso de plataformas de consentimiento.	
+answer = b	
+		
+* Suponiendo que su aplicación, gracias a guardar datos en caché, permite saltarse ciertos mecanismos por ya tener un valor previo existente, esto podría ocasionar que se infrinja cúal de los siguientes principios de seguridad?	
+a. Mediación completa
+b. Control de configuración.	
+c. Diseño abierto.	
+d. Defensa de profundidad.	
+e. Economía de mecanismos.	
+f. Diseño hermético.
+answer = a
+	
+* Con el fin de prevenir amenazas del tipo Configuración incorrecta de seguridad, decide dejar la configuración inicial de las herramientas para mostrar mensajes detallados y poder corregir las fallas de forma más rápida al tener acceso a esta información. Esto logrará impedir que se materializa la amenaza?	
+a. Falso
+b. Verdadero	
+answer = a			
+		
+* Qué sistema automatizado sugiere OWASP para asegurar el cumplimiento de las políticas de retención de datos?	
+a. Dashboards.	
+b. Eliminación automática de datos antiguos.
+c. Sistema de cifrado automático.	
+d. Validación continua.	
+answer = b	
+		
+* Un usuario accidentalmente revela información sensible debido a la falta de controles en las interfaces de usuario de la aplicación. Que vulnerabilidad está siendo explotada?	
+a. Almacenamiento inseguro de datos.	
+b. Protección binaria insuficiente.	
+c. Interacción de plataforma insegura
+d. Configuración incorrecta de seguridad.	
+answer = c	
+		
+* "Usted, como administrador de sistemas, detecta que muchos de sus usuarios utilizan contraseñas como las siguientes:
+password
+123456
+12345678
+1234
+qwerty
+12345
+dragon
+
+* Considerando esto. Cual de las siguientes amenazas de OWASP TOP 10 se podría causar?"	
+a. Inyección.	
+b. Fallos de criptografía	
+c. Fallos de integridad de software y datos.	
+d. Control de acceso roto.	
+e. Diseño inseguro.	
+f. Errores de identificación y autenticación.
+answer = f
+
+* Un sistema de Ia utilizado para detectar fraudes en transacciones bancarias empieza a mostrar un alto número de de falsos negativos, pasando por alto transaccione fraudulentas. Tras investigar, se descubre que los datos utilizados para entrenar el modelo fueron manipulados para alterar los resultados. Qué tipo de vulnerabilidad sufrió el modelo?	
+a. Exposición a datos sensibles	
+b. Ataque DDos.	
+c. Ataque adversarial.	
+d. Envenenamiento de datos.
+answer = d
+		
+* Que es una causa común de la exposición de datos confidenciales?	
+a. Uso de contraseñas seguras.	
+b. Uso de redes seguras.	
+c. Cifrado excesivo de datos.	
+d. Insuficiente protección de datos en reposo.
+answer = d
+		
+* Cual de las siguientes acciones ayuda a prevenir configuraciones erróneas de seguridad?	
+a. Usar servidores de autenticación de terceros.	
+b. Hacer cambios frecuentes de validación.	
+c. Utilizar contraseñas por defecto.	
+d. Actualizar y aplicar parches regularmente.
+answer = d
+		
+* Qué categoría establece que la aplicación móvil debe realizar conexiones seguras bajo cualquier circunstancia?	
+a. MASVS-DEVOPS.	
+b. MASVS-AUTH.	
+c. MASVS-CRYPTO.	
+d. MASVS-NETWORK.
+e. MASVS-STORAGE.	
+f. MASVS-RESILIENCE.
+answer = d
+
+* Qué tipo análisis efectúa la inspección del código cuando este se está ejecutando?	
+a. Sanitización de entradas.	
+b. Análisis de código dinámico	X
+c. Compilación	
+d. Depuración (Debugging)	
+e. Revisión de código	
+f. Análisis de código estático
+answer = b
+
+* Un atacante utiliza un dispositivo comprometido para interceptar datos transmitidos sin cifrado entre la aplicación y el servidor. Que vulnerabilidad está siendo explotada?	
+a. Almacenamiento inseguro de datos.	
+b. Autenticación insegura.	
+c. Protección binaria insuficiente.	
+d. Comunicación insegura
+answer = d	
+		
+* Durante el proceso de desarrollo de software, el equipo está utilizando herramientas para gestionar las bibliotecas y componentes de terceros integrados en la aplicación. La principal preocupación es garantizar que no existen vulnerabilidades de seguridad ni problemas de licencias asociados con estas dependencias externas. Cual de las siguientes pruebas es la más adecuada para este propósito?	
+a. Prueba de caja negra. Se enfocan en la funcionalidad del sistema sin tener en cuenta el código fuente o las dependencias externas.	
+b. Pruebas de integración. Se aplica para verificar la interacción entre los diferentes módulos del sistema, pero no abordan las dependencias externas.	
+c. Software Composition Analysis (SCA). Se enfoca en la gestión y análisis de las bibliotecas y dependencias de terceros, identificados vulnerabilidades de seguridad y problemas de licencias.	X
+d. Pruebas de caja blanca. Se realizan analizando el código fuente y la estructura interna del sistema, pero no gestionan las dependencias de terceros,	
+e. Pruebas de aceptación del usuario. Se realizan para asegurar que el sistema cumpla con los requisitos del cliente, pero no se ocupan de las dependencias externas.	
+f. Pruebas de regresión. Se realizan para asegurar que los cambios no afecten funcionalidades existentes, pero no están orientadas a las bibliotecas externas.	
+answer = c
+
+* Un equipo de desarrollo necesita aumentar la velocidad de despliegue y asegurar que el código sea probado automáticamente. Que práctica de DevOps debe implementar?	
+a. Infraestructura como código (IaC).	
+b. Entrega continua (CD).	
+c. Pruebas manuales	
+d. Integración continua (CI)
+answer = d
+		
+* "Deshabilite características, servicios o módulo innecesarios para la funcionalidad de la API.
+Implementar mecanismos adecuados de manejo de errores y registro para evitar que la información confidencial se exponga.
+¿Los anteriores son ejemplos de soluciones ante qué tipo de amenaza?"	
+a. Falsificación de solicitudes del lado del servidor,	
+b. Acceso a restricciones a flujos comerciales sensibles,	
+c. Gestión inadecuada del inventario.	
+d. Autorización de nivel de función rota.	
+e. Autorización de nivel de propiedad de objeto roto.	
+f. Configuración incorrecta de seguridad
+answer = f
+
+* "Un sistema de API no controla adecuadamente las autorizaciones para acceder a datos sensibles.
+¿ Que vulnerabilidad se está explotando?"	
+a. Autenticación rota.	
+b. Consumo de recursos sin restricción.	
+c. Acceso no autorizado a flujos sensibles.
+d. Autorización de función rota.	
+answer = c	
+		
+* Un desarrollador está intentando probar un sistema para detectar vulnerabilidades en tiempo de ejecución. ¿Qué tipo de prueba debería utilizar?	
+a. Pruebas de seguridad dinámicas de aplicaciones (DAST)
+b. Pruebas de seguridad estáticas (SAST)	
+c. Pruebas de rendimiento	
+d. Pruebas unitarias	
+answer = a	
+		
+* Un equipo de operaciones necesita una solución para gestionar la infraestructura virtual. ¿Qué opción es más adecuada?	
+a. Usar servidores físicos únicamente.	
+b. Evitar la virtualización de la infraestructura.	
+c. Configuración manualmente la infraestructura en cada entorno.	
+d. Implementar infraestructura como Código (IaC).
+answer = d
+		
+* Esta es una técnica utilizada para evitar la ingeniería inversa y la piratería, forma parte de los requisitos antipiratería; lo que busca en transformar el código fuente original para volver ilegible y difícil de analizar el código	
+a. Cifrado simétrico.	
+b. Ofuscación	X
+c. Replicación	
+d. Cifrado asimétrico	
+e. Copias de seguridad	
+f. Hasheo
+answer = b
+
+* Cúal es la finalidad principal de una arquitectura de seguridad robusta?	
+a. Proveer medidas preventivas
+b. Evitar cualquier costo operativo	
+c. Responder a amenazas después del ataque.	
+d. Diseñar medidas reactivas	
+answer = a
+		
+* Qué implica el secuestro de sesión?	
+a. Obtención del ID de sesión para hacerse pasar por un usuario legítimo.
+b. Creación de un ID de sesión en el servidor.	
+c. Manipulación de contraseñas mediante ataques.	
+d. Forzar al usuario a cerrar sesión	
+answer = a
+		
+* Qué se busca equilibrar en la arquitectura de seguridad?	
+a. Seguridad y rendimiento
+b. Amenazas y oportunidades	
+c. Infraestructura y software.	
+d. Costos y ganancias	
+answer = a	
+		
+* Que practica recomienda OWASP para garantizar que los modelos respeten la privacidad de los usuarios durante el desarrollo de IA?	
+a. Revisar únicamente la seguridad de los datos,	
+b. Implementar pruebas de privacidad
+c. Utilizar sólo datos sintéticos sin analizar su origen	
+d. Ofrecer opciones de consentimiento pasivas.	
+answer = b	
+		
+* Como se llama el proceso que se enfoca en la seguridad después del proceso de desarrollo?	
+a. SCRUM	
+b. Desplazar la seguridad a la derecha
+c. Concientización	
+d. DEVOPS	
+e. Desarrollo ágil	
+f. Automatización
+answer = b
+
+* Que tipo de aplicaciones suelen dejar de funcionar en dispositivos rooteados o con jailbreak?	
+a. Juegos	
+b. Redes Sociales	
+c. Apps de pago y financieras
+d. Herramientas de comunicación	
+answer = c
+		
+* Una empresa quiere utilizar datos personales de los usuarios en su momento de IA. ¿Qué debe hacer para cumplir con las regulaciones de privacidad como el GDPR?	
+a. Informar a los usuarios solo después de usar sus datos.	
+b. Obtener consentimiento explícito de los usuarios antes de procesar sus datos.
+c. Utilizar los datos sin el consentimiento explícito de los usuarios.	
+d. Recojer los datos sin necesidad de consentimiento, ya que son para fines internos.	
+answer = b
+		
+* Validación de entrada	
+a. sean  seguros	
+b. NA	
+c. Para asegurar que todos los datos de entrada sean correctos y seguros.
+d. 1 y 3
+answer = c
+		
+* Considerando las distintas pruebas que se realizan sobre el software para garantizar su funcionalidad, si hablamos de una prueba que se enfoca en justamente validar el comportamiento del sistema ante ataques de fuerza bruta, de qué tipo de prueba estamos hablando?	
+a. Pruebas de regresión.	
+b. Pruebas de integración	
+c. Pruebas de análisis dinámico	
+d. Pruebas unitarias.	
+e. Fuzzing
+f. Revisión de código
+answer = e
+
+* Qué representa la capacidad de explicar decisiones en IA?	
+a. Trazabilidad y auditorías de decisiones.
+b. Desplazar la seguridad a la derecha.	
+c. Eliminando funciones y frameworks no utilizados.	
+d. Confidencialidad, integridad y disponibilidad.	
+answer = a
+		
+* Qué representa el modelo CIA?	
+a. Confidencialidad, integridad y disponibilidad.
+b. Desplazar la seguridad a la derecha.	
+c. Eliminando funciones y frameworks no utilizados.	
+d. Hardening de seguridad	
+answer = a	
+		
+* Qué pasa si API expone más datos de los necesarios?	
+a. Los clientes de la API podrían tener acceso a datos que no deberían estar a su disposición.
+b. Se produce un ataque DDoS.	
+c. Se produce un SSRF.	
+d. La API realiza un análisis de tráfico
+answer = a		
+		
+* Qué detecta DAST mejor que SAST?	
+a. Vulnerabilidades relacionadas con la red o el tráfico en vivo.
+b. Fallos en la lógica de negocio durante la ejecución de la aplicación.	
+c. Errores de compilación y problemas de sintaxis en el código fuente.	
+d. Inyecciones SQL detectadas en tiempo de ejecución en un entorno real.	
+answer = a	
+		
+* Qué hacer antes del despliegue?	
+a. Revisar todas las políticas de seguridad antes del despliegue.
+b. Limitar revisiones técnicas.	
+c. Gestionar solo cambios en la base de datos.	
+d. Supervisar artefactos y componentes	
+answer = a	
+		
+* Qué reduce superficie de ataque en librerías?	
+a. Eliminando funciones y frameworks no utilizados.
+b. Principio de mínimo privilegio.	
+c. Hardening de seguridad.	
+d. Validación de entradas.	
+answer = a
+		
+* Qué ayuda a preservar la integridad de los datos?	
+a. Almacenando dependencias en repositorios confiables.	
+b. Aplicando restricciones como claves primarias y foráneas en la base de datos.	
+c. Realizando validaciones de entrada en el sistema antes de guardar los datos.
+answer = c	
+		
+* Tras un evento que detuvo el sistema, cuál métrica incumplida puede implicar sanción?	
+a. SLA
+b. KPI	
+c. OLA	
+d. SLI	
+answer = a	
+		
+* Con el fin de lograr prevenir cierto tipo de vulnerabilidad, decide eliminar todos los servicios y procesos innecesarios o innecesarios. ¿Esto logrará impedir que se materialice qué tipo de amenaza?	
+a. Inyección.	
+b. Configuración incorrecta de seguridad.
+c. Fallos de integridad de software y datos.	
+d. Falsificación de solicitudes del lado del servidor.	
+e. Diseño inseguro.	
+f. Errores criptográficos	
+answer = a
+
+* Como gerente de proyecto, usted y su equipo han identificado un evento de riesgo con una alta tasa de ocurrencia y un alto impacto en el costo. Usted decide discutir esta situación con la representante principal del cliente, y ella decide que los requisitos que rodean el riesgo deben eliminarse. La eliminación de los requisitos afecta al alcance del proyecto, pero puede liberarlo de la exposición al alto riesgo. ¿Qué respuesta al riesgo se ha puesto en marcha en este proyecto?	
+a. Transferir el riesgo.	
+b. Ignorar el riesgo.	
+c. Mitigar el riesgo.	
+d. Evitar el riesgo.
+e. Aceptar el riesgo.	
+answer = d
+
+* ¿Cómo se puede mitigar el consumo no restringido de recursos?	
+a. Permitiendo acceso ilimitado.	
+b. No limitando la velocidad de acceso.	
+c. Implementando límites y cuotas de uso.
+d. Eliminando todas las peticiones de los usuarios.	
+answer = c
+		
+* Una empresa necesita una aplicación que funcione offline con datos limitados. ¿Qué opción sería ideal?	
+a. Desarrollo nativo.	
+b. Aplicación basada en la nube.	
+c. Aplicación web progresiva.
+d. Desarrollo híbrido.	
+answer = c
+		
+* Una organización utiliza datos anonimizados en lugar de datos reales para proteger la privacidad de los usuarios. ¿Qué técnica está aplicando para cumplir con regulaciones de privacidad?	
+a. Entrenamiento adversarial	
+b. Uso de datos sintéticos
+c. Plataforma de gestión de consentimiento	
+d. Derecho de corrección	
+answer = b
+		
+* ¿Cómo puede prevenirse una configuración insegura?	
+a. Eliminando funciones y frameworks no utilizados.
+b. Evitando procesos de hardening.	
+c. No actualizar configuraciones.	
+d. Usando credenciales compartidas en todos los entornos.	
+answer = a	
+		
+* Al obtener imágenes de contenedor, ¿qué factor es esencial para su seguridad?	
+a. Usar siempre imágenes de contenedor más grandes.	
+b. Asegurarse de que las imágenes estén firmadas y provengan de fuentes confiables.
+c. Evitar actualizar las imágenes una vez que se descargan.	
+d. Verificar solo el sistema operativo del contenedor.	
+answer = b
+		
+* ¿Qué es lo que los proveedores de servicios en la nube deben gestionar en un modelo de responsabilidad compartida?	
+a. Los sistemas operativos de los usuarios.	
+b. Los secretos de las aplicaciones.	
+c. La seguridad de las aplicaciones en la nube.	
+d. La seguridad de la infraestructura subyacente, como almacenamiento y redes.
+answer = d		
+		
+* Un atacante explota un acceso no autorizado a las comunicaciones entre la aplicación y el servidor para robar datos. ¿Qué vulnerabilidad está siendo explotada?	
+a. Comunicación insegura.
+b. Configuración incorrecta de seguridad.	
+c. Autenticación insegura.	
+d. Protección binaria insuficiente.	
+answer = a
+		
+* ¿Qué debe hacer un equipo de operaciones cuando detecta un posible problema durante una incidencia de soporte técnico?	
+a. Enviar una alerta al equipo de desarrollo para su revisión.	
+b. Resolver el problema de manera inmediata.	
+c. Ignorar el problema si no parece grave.	
+d. Crear un ticket para su investigación.
+answer = d	
+		
+* ¿Qué método ayuda a encontrar defectos de codificación mediante datos estructurados y conocidos?	
+a. Inyección de fallas.
+b. Dumb fuzzing.	
+c. Smart fuzzing.	
+d. Validación de datos.	
+answer = a	
+		
+* Su empresa está desarrollando una aplicación web utilizando varias bibliotecas y componentes de terceros. El equipo de desarrollo decide utilizar una herramienta SCA para evaluar la seguridad y la gestión de las dependencias de terceros antes de lanzar la aplicación al público. ¿Cuál de las siguientes afirmaciones describe correctamente el uso de SCA en este escenario?	
+a. El SCA es útil solo en las fases finales del desarrollo, cuando el software ya está en producción.	
+b. El SCA analiza solo el código fuente de la aplicación, sin tener en cuenta las dependencias externas de terceros.	
+c. El SCA ayuda a identificar vulnerabilidades de seguridad y problemas de licencias asociados con las bibliotecas y componentes de terceros, asegurando que sean seguros y compatibles antes del lanzamiento.	X
+d. El SCA reemplaza todas las pruebas de seguridad, eliminando la necesidad de realizar análisis dinámicos o estáticos adicionales.	
+e. El SCA se aplica exclusivamente a aplicaciones móviles y no es útil para aplicaciones web que utilizan bibliotecas de terceros.	
+f. El SCA se utiliza exclusivamente para optimizar el rendimiento de las bibliotecas y componentes de terceros, sin enfocarse en la seguridad o las licencias.
+answer = c
+
+* Con el fin de lograr prevenir la amenaza del tipo componentes vulnerables y obsoletos, decide validar los datos proporcionados por el usuario, sanitizados en el proceso por la aplicación usando consultas dinámicas en el proceso. ¿Esto logrará impedir que se materialice la amenaza?	
+	a. Verdadero.	
+	b. Falso.
+answer = b	
+		
+* Gracias a este tipo de requerimientos, se puede especificar qué información se le devuelve al usuario en caso de haber un error dentro de la aplicación.	
+a. Requerimiento de manejo de errores.
+b. Requerimientos de integridad.	
+c. Requerimientos de autenticación.	
+d. Requerimientos de confidencialidad.	
+e. Requerimientos de manejo de configuraciones.	
+f. Requerimientos de manejo de errores.	
+answer = a
+
+* ¿Cuál de los siguientes no es un tipo de control de seguridad mencionado?	
+a. Control de hardware especializado.	
+b. Control de ciberseguridad.
+c. Control de seguridad física.	
+d. Control de seguridad en la nube.	
+answer = b	
+		
+* ¿Cuál de los siguientes principios y prácticas de codificación segura define la apariencia del código para que un revisor y mantenedor de código que no haya escrito ese código pueda entenderlo fácilmente?	
+a. Mantenga el código simple y pequeño.	
+b. Hacer que el código sea rastreable hacia adelante y hacia atrás.	
+c. Usar un estilo de codificación coherente.
+d. Revisar el código durante y después de la codificación.	
+answer = c	
+		
+* ¿Qué categoría establece que la aplicación debe contar con un mecanismo para hacer cumplir las actualizaciones de la aplicación?	
+a. MASVS-CODE.
+b. MASVS-NETWORK.	
+c. MASVS-STORAGE.	
+d. MASVS-CRYPTO.	
+e. MASVS-AUTH.	
+f. MASVS-DEVOPS.	
+answer = a
+
+* Considerando una aplicación con una arquitectura cliente-servidor, la lógica del negocio debería manejarse principalmente en el lado del servidor, esto con el fin de lograr una de las siguientes opciones. ¿Cuál es el principio que estamos cumpliendo?	
+a. Mínima exposición.
+b. Diseño abierto.	
+c. Fallo seguro.	
+d. Economía de mecanismos.	
+e. Menor privilegio.	
+f. Aceptabilidad psicológica.
+answer = a
+
+* Después de un evento inesperado que detuvo el sistema por una cantidad considerable de tiempo, le piden elaborar un documento donde se aborden ciertas métricas que midan el impacto del desastre en la continuidad del negocio. ¿Cuál de las siguientes opciones es el tiempo ofertado que, de no cumplirlo, puede haber sanciones por alguna de las partes?	
+a. SLA.
+b. RTO.	
+c. RTA.	
+d. MTD.	
+e. RCO.	
+f. RPO.	
+answer = a
+
+* Un cliente solicita a una empresa de análisis de IA una copia de todos los datos personales que tiene sobre él en un formato que pueda ser interpretado por otras plataformas. ¿Qué derecho está ejerciendo este cliente?	
+a. Derecho de acceso/portabilidad.
+b. Derecho de oposición.	
+c. Derecho de corrección.	
+d. Derecho de supresión.	
+answer = a	
+		
+* Usted, como administrador de la plataforma, recibe recomendaciones de un compañero de ciberseguridad para poder llevar a cabo un hardening de la configuración de la plataforma donde corren las aplicaciones más importantes de la empresa. En ese sentido, el objetivo final de llevar a cabo el hardening es reducir uno de los siguientes conceptos.	
+a. Falla.	
+b. Debilidad.	
+c. Amenaza.	
+d. Vulnerabilidad.	
+e. Fortaleza.	
+f. Superficie de ataque.
+answer = f
+
+* Un servidor de API no aplica medidas de seguridad adecuadas para proteger los flujos comerciales confidenciales. ¿Qué vulnerabilidad está siendo explotada?	
+a. Autorización de objeto rota.	
+b. Consumo de recursos sin restricción.	
+c. Acceso no autorizado a flujos sensibles.
+d. Autenticación rota.	
+answer = c
+		
+* Considerando la importancia de las métricas y de los logs, al momento de desplegar su aplicación, omite el hecho de utilizar una herramienta de escalamiento que trabaje con alguna métrica que mida el desempeño de la aplicación/del servidor donde está corriendo. ¿Esto puede considerarse una amenaza de errores de registro y supervisión de seguridad?	
+a. Verdadero.
+b. Falso.	
+answer = a
+			
+* Un atacante accede a datos almacenados en una base de datos local sin cifrado en una aplicación móvil. ¿Qué vulnerabilidad está siendo explotada?	
+a. Criptografía insuficiente.	
+b. Autenticación insegura.	
+c. Almacenamiento inseguro de datos.
+d. Configuración incorrecta de seguridad.	
+answer = c
+		
+* Algunos ejemplos de estas vulnerabilidades incluyen el uso de múltiples versiones de API, la exposición de API de desarrollo, políticas de control de acceso incorrectas, etc.	
+a. Acceso sin restricciones a flujos comerciales sensibles.	
+b. Autorización de nivel de función rota.	
+c. Configuración incorrecta de seguridad.	
+d. Autorización de nivel de propiedad de objeto roto.	
+e. Falsificación de solicitudes del lado del servidor.	
+f. Gestión inadecuada de inventario.
+answer = f
+
+* Con el fin de lograr prevenir cierto tipo de vulnerabilidad, decide implementar el número máximo de intentos de autenticación permitido y, cuando haya pasado ese número, denegar de forma predeterminada y desCATivar la cuenta hasta que se realice un procedimiento para reactivarla. ¿Esto logrará impedir que se materialice qué tipo de amenaza?	
+a. Inyección.	
+b. Falsificación de solicitudes del lado del servidor.	
+c. Fallos de integridad de software y datos.	
+d. Errores de identificación y autenticación.
+e. Fallos de integridad de software y datos.	
+f. Configuración incorrecta de seguridad.	
+answer = d
+
+* ¿Qué categoría establece que la aplicación debe validar y desinfectar todas las entradas que no son de confianza?	
+a. MASVS-STORAGE.	
+b. MASVS-CRYPTO.	
+c. MASVS-AUTH.	
+d. MASVS-CODE.
+e. MASVS-DEVOPS.	
+f. MASVS-NETWORK.
+answer = d
+
+* Si no se gestiona con cuidado, un cliente de la API podría tener acceso a recursos que no deberían estar a su disposición, lo que aumenta la posibilidad de que se produzca una fuga de datos. ¿A qué principio de seguridad nos referimos?	
+a. Confidencialidad.
+b. Disponbilidad.	
+c. Logging.	
+d. Monitoreo.	
+e. Autenticación.	
+f. Autorización.
+answer = a
+
+* ¿Qué ataque se lleva a cabo para saturar un servidor web hasta inutilizarlo?	
+a. Inyección SQL.	
+b. Phishing.	
+c. DoS.
+d. Whaling.
+answer = c
+		
+* Gracias a este tipo de requerimientos, se puede establecer qué acciones están bloqueadas o permitidas. Esta configuración puede basarse en distintos criterios, en la discreción de un individuo, en una serie de reglas, en roles y demás.	
+a. Requerimientos de integridad.	
+b. Requerimientos de autenticación.	
+c. Requerimientos de manejo de errores.	
+d. Requerimientos de confidencialidad.	
+e. Requerimientos de autorización.
+f. Requerimientos de manejo de configuraciones.	
+answer = e
+
+* Los desarrolladores a menudo confían en los datos recibidos, especialmente cuando trabajan con proveedores de renombre e implementan políticas y estándares de seguridad menos estrictos. ¿A qué categoría de amenaza hace referencia el enunciado anterior?	
+a. Autorización de nivel de propiedad de objeto roto.	
+b. Acceso sin restricciones a flujos comerciales sensibles.	
+c. Autorización de nivel de función rota.	
+d. Configuración incorrecta de seguridad.	
+e. Falsificación de solicitudes del lado del servidor.	
+f. Consumo inseguro de API.
+answer = f
+
+* "Después de un evento inesperado que detuvo el sistema por una cantidad considerable de tiempo, le piden elaborar un documento donde se aorden ciertas métricas que midan el impacto del desastre en la continuidad del negocio.
+¿Cuál de las siguientes opciones es la duración del tiempo y el nivel de servicio dentro del cual se debe restaurar un proceso de negocio?”"	
+a. RTA	
+b. MTD	
+c. RPO.	
+d. RCO.	
+e. RTO
+f. SLA
+answer = e
+	
+* Considerando que en su organización desempeña un cierto puesto, a usted con base en dicho puesto se le otorgan permisos para desempeñar sus actividades, pero tiene prohibido poder realizar prácticamente cualquier otra acción. ¿Qué tipo de principio de seguridad se está siguiendo en su organización?	
+a. Diseño abierto	
+b. Economía de mecanismos	
+c. Menor privilegio
+d. Defensa de profundidad.	
+e. Mecanismo menos común	
+f. Separación de responsabilidad	
+answer = c
+
+* ¿Por qué es riesgoso que los desarrolladores codifiquen secretos en aplicaciones o códigos de microservicios?	
+a. Porque pueden quedar desprotegidos y mal administrados en difentes infraestructuras	
+b. Porque los secretos pueden ser facilmente expuestos en la red
+c. Porque los códigos de microservicios son inseguros	
+d. Porque los secretos son siempre fáciles de recuperar por el equipo de seguridad	
+answer = b	
+		
+* Que son vulnerabilidades de "Broken Function Level Authorization" ?	
+a. Fallos en la autenticación de los usuarios	
+b. Problemas con la criptografía utilizada en la API	
+c. Incompatilidad con ciertos tipos de dispositivos.	
+d. Errores en el control de acceso a funciones y acciones específicas de la API.
+answer = d
+		
+* Que principio establece que el acceso debe ser permitido solo a usuarios específicos?	
+a. Validación de entradas	
+b. Modelo de amenazas	
+c. Hardening de seguridad	
+d. Principio de mínimo privilegio
+answer = d	
+		
+* Una de las técnicas que utilizan los lenguas de programación más nuevos en comparación con lenguajes más viejos es la gestión automática de memoria. Permitiendo de esta manera prevenir ataques que sobrecarguen la memoria con objetos que ya son inalcanzables en el programa. Lo anterior podría ayudar a prevenir ataques de denegación de servicio?	
+a. Falso	
+b. Verdadero
+answer = b	
+		
+* Que se busca prevenir con la implementación de técnicas de análisis anti dinámico en un aplicación?	
+a. El acceso a la memoria de la aplicación	
+b. La modificación de la interfaz de usuario	
+c. La corrupción de los datos almacenados en el dispositivo	
+d. El análisis y la manipulación del código durante el tiempo de ejecución
+answer = d
+		
+* Que es un exploit?	
+a. El uso de una vulnerabilidad para causar daño
+b. Una herramienta para evitar amenazas	
+c. Una red de monitoreo	
+d. Un programa de mitigación	
+answer = a
+		
+* "Implementar la validación y el filtrado de URLs para bloquear o desinfenctar URLs potencialmente maliciosas. Monitorear y registrar solicitudes del lado del servidor para detectar e investigar actividad sospechosa.
+Los anteriores son ejemplos de soluciones ante cuál tipo de amenazas?"	
+a. Autorización de nivel de función rota.	
+b. Configuración incorrecta de seguridad.	
+c. Falsificación de solicitudes del lado del servidor
+d. Acceso sin restricciones a flujos comerciales sensibles	
+e. Autorización de nivel de propiedad de objeto roto.	
+f. Gestión inasecuada del inventario
+answer = c
+
+* Que protocolo es recomendado para cifrar los datos transmitidos entre una API y sus condumidores?	
+a. HTTP	
+b. SSH	
+c. FTP	
+d. TLS/SSL
+answer = d
