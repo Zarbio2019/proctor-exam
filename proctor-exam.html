@@ -31,6 +31,17 @@
 	  width: 100%;
 	  height: 100%;
 	  object-fit: cover;
+	.question pre {
+	  background: #f5f5f5;
+	  border: 1px solid #ddd;
+	  padding: 4px 8px;
+	  margin: 2px 0;
+	  border-radius: 4px;
+	  display: inline-block;
+	  white-space: pre-wrap; /* keep line breaks and wrap long lines */
+	  font-family: monospace;
+	  font-size: 14px;
+	}
   </style>
 </head>
 <body>
@@ -105,8 +116,12 @@ function handleFile(ev){
 }
 
 function parseQuestions(text){
-  // split by blocks that start with '*' (like your sample)
-  const blocks = text.split('*').map(b => b.trim()).filter(Boolean);
+  // split by blocks that start with '*' (like your sample)  
+  const blocks = text
+  .split(/\n\s*\*/g)  // split only when * starts a new block
+  .map(b => b.replace(/^\s*\*/, "").trim())  // remove leading *
+  .filter(Boolean);
+  
   answers = [];
   const examDiv = document.getElementById('exam');
   examDiv.innerHTML = '';
@@ -117,7 +132,6 @@ function parseQuestions(text){
 	const ans = parts[1]
       ? parts[1].trim().split(",").map(a => a.trim().toLowerCase())
       : [];
-	debugger;
     answers.push(ans);
 
     const container = document.createElement('div');
@@ -134,13 +148,26 @@ function parseQuestions(text){
 	const correctAns = answers[idx];  // array of correct answers
 	const inputType = correctAns.length > 1 ? "checkbox" : "radio";
 
-    lines.forEach(line => {
+	lines.forEach((line, i) => {
       // options usually like "a. text"
-      const optMatch = line.match(/^([a-zA-Z])\.\s*(.*)$/);
+      const optMatch = line.match(/^([a-z])\.\s*(.*)$/);
       if(optMatch){
         const opt = optMatch[1].toLowerCase();
+		
+		// collect multi-line continuation
+		let optText = optMatch[2];
+		let j = i + 1;
+		while (j < lines.length && /^\s/.test(lines[j])) {
+		  optText += "\n" + lines[j];
+		  j++;
+		}
+		i = j - 1; // skip collected lines
+	
+		// escape before inserting
+		const safeText = escapeHtml(optText);
+  
         const label = document.createElement('label');
-        label.innerHTML = `<input type="${inputType}" name="q${idx}" value="${opt}"> ${optMatch[1]}. ${optMatch[2]}`;
+        label.innerHTML = `<input type="${inputType}" name="q${idx}" value="${opt}"> ${optMatch[1]}. ${safeText}`;
 		container.appendChild(label);
         container.appendChild(document.createElement('br'));
       } else {
@@ -156,6 +183,15 @@ function parseQuestions(text){
 
   // if oneAtTime default off, show all; otherwise show only first
   if(oneAtTime) showQuestion(0);
+}
+
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 /* -------------------------

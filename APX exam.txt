@@ -29,6 +29,10 @@ d.	No es necesario declarar ninguna visibilidad
 e.	Solo es necesario importar la librería desde apx-cli para usarla
 answer = b
 
+* la visibilidad de las librerías externas se realiza en la misma UUAA o en la UUAA q se va usar?
+a. En la misma uuaa 
+answer = a
+
 * Para el consumo de un servicio ASO desde una transacción APX es necesario realizar un perfilado:
 a. Se perfila con la AAP de ASO
 b. No es necesario perfilar
@@ -52,6 +56,10 @@ c. proxyApxPeru
 d. api.connector.proxy.hostname
 e. api.connector.proxy.password
 answer = a,c
+
+* cuáles son los valores para las propiedades para el proxy en uuaa, para consumir servicios externos en apx.
+a. default
+asnwer = a
 
 * ¿Cuáles son las propiedades del proxy que se dan de Alta en la configuración de Seguridad (UUAA) para consumir servicios externos en APX? (múltiple elección)
 a. api.connector.proxy.port
@@ -106,7 +114,7 @@ a. api.connector.Id.url
 b. api.connector..host
 c. api.connector..api
 d. api.connector.id.invoke.type
-e. api.connector..aso
+e. api.connector.aso
 answer = a,d
 
 * cual es el aplicativo con el que se administra la seguridad en apx
@@ -123,11 +131,11 @@ e. Vault Service
 answer = b
 
 * ¿Cuál es el formato de Certificado que es soportado por el Servicio de Gestión de Servicios de Ether y es usado en APX?
-a. .p12
-b. .crt
-c. .cer
-d. .pm
-e. .pem
+a. *.p12
+b. *.crt
+c. *.cer
+d. *.pm
+e. *.pem
 answer = a
 
 * Para visualizar los campos entrada o salida de una transacción APX, ¿cuál es el comando necesario en el APX CLI?
@@ -136,6 +144,26 @@ b. apx show out / in
 c. apx show ou / in
 d. apx show int / out
 e. apx show dep / in
+answer = a
+
+* cual es el comando de entrada, salida con código apx
+a. apx show in / out
+answer = a
+
+* estructura del name apx
+a.
+onl_create_account
+onl_get_account
+bch_update_delete_account
+bch_extract_log
+
+ora_load_customer
+ora_update_parameter
+
+lib_notify_contract_online
+lib_envio_sms_batch
+dto_notify_contract
+dto_envio_sms
 answer = a
 
 * Para crear un recurso en Ether de tipo transacción ¿Cuál sería la nomenclatura correcta?
@@ -153,6 +181,16 @@ c. dto_recurso_1
 d. bch_recurso_1
 e. apx_recurso_1
 answer = e
+
+* Donde se dan de alta a los códigos de excepción que va a enviar una transacción
+a. Consola apx en la opción error management
+answer = a
+
+* Cuál es la excepción que se puede manejar cuando se realiza una interacción a través de Api Connector
+a.
+org.springframework.web.client.RestClientException
+org.springframework.web.client.HttpStatusCodeException
+answer = a
 
 * Al consumir una API por internalApiConnector. ¿Cuál es la única excepción permitida?
 a. RestException
@@ -172,11 +210,15 @@ f. IllegalAccesException
 answer = b,d,f
 
 * Indique que excepciones son permitidas en la Arquitectura APX:
-a. BusinessException
-b. DuplicateKeyException
-c. NoResultException
-d. Exception
-answer = a,b,c
+I. BusinessException
+II. DuplicateKeyException
+III. NoResultException
+IV. Exception
+a. I, II, III, IV
+b. I, II, III
+c. Solo I
+d. I y IV
+answer = b
 
 * Para actualizar la versión de Arquitectura APX en una aplicación obsoleta, ¿cuántos valores se deben modificar en el POM.XML?
 a. 2
@@ -201,7 +243,7 @@ c. preparación
 d. comunica
 e. desarrollo, test, producción
 f. perfilado  
-anwer = a
+answer = a
 
 * ¿En qué lugar se dan de alta los mensajes de error que devuelve una transacción APX?
 a. En la consola de operaciones APX
@@ -242,6 +284,31 @@ c. Para establecer errores funcionales definidos en la consola de operaciones
 d. Para integrar una unidad de despliegue con otras capacidades en Ether
 e. Para establecer una respuesta mock en los tests
 answer = c
+
+* cuál es el tag para excluir en el sonar
+a. <sonar.coverage.exclusions>
+answer = a
+
+* ¿Cuál es la forma correcta de excluir del SONAR los DATOS?
+a. 
+   <properties>
+	<sonar.coverage.exclusions>
+		/src/main/java/com/bbva/uuaa/dto/**/*.java
+	</sonar.coverage.exclusions>
+   </properties>
+b. 
+   <properties>
+	<apx.coverage.exclusions>
+		/src/main/java/com/bbva/uuaa/dto/**/*.java
+	</apx.coverage.exclusions>
+   </properties>
+c. 
+   <properties>
+	<sonar.coverage.outputDirectoryDTOs>
+		/src/main/java/com/bbva/uuaa/dto/**/*.java
+	</sonar.coverage.outputDirectoryDTOs>
+   </properties>
+answer = a
 
 * Para la ejecución en local de APX, ¿en qué parte del pom principal se debe hacer cambios de ruta?
 a. Versión
@@ -350,6 +417,15 @@ d. 7.9.2
 e. 8.x.x
 answer = e
 
+* cuáles son los códigos de entorno
+a.
+dev = desarrollo
+int = test
+aus = calidad
+oct = octa
+live = producción
+answer = a
+
 * cuál es el formato para la consulta en una base de datos
 a. nombre_query_coneccion;
 b. nombre_query = query_conection
@@ -374,6 +450,154 @@ c. hotfix
 d. solo feature
 answer = b
 
+* Escriba los comandos para generar una transacción en la consola APX (Ejm.: apx local deploy)
+a.
+apx add lib
+apx add dto
+apx add trx
+answer = a
+
+* Escriba los comandos para generar una librería en la consola APX (Ejm.: apx local deploy)
+a. apx add lib
+answer = a
+
+* Escriba los comandos para generar un dto en la consola APX (Ejm.: apx local deploy)
+a. apx add dto
+answer = a
+
+* En qué consola modificas las propiedades de base de datos:
+a. consola ether
+b. consola apx
+c. athenea
+d. portunus
+answer = b
+
+* Dónde se genera un recurso apx?
+a. consola ether
+b. consola apx
+c. athenea
+d. portunus
+answer = a
+
+* Cómo se llama el header que hace referencia a la transacción?
+a. logical-transaction-code
+answer = a
+
+* Cómo se llama la variable de entorno de APX?
+a. APX_HOME
+answer = a
+
+* Selecciona la opción donde se modifica las entradas y salidas del documento D520 en la transacción:
+a. UUAAT001-01-PE.xml
+b. UUAA.properties
+c. log4j.xml
+answer = a
+
+* dentro de un proyecto donde se realiza la configuración para la conexión a bd
+a. dto
+b. trx
+c. librerias
+d. properties
+answer = d
+
+* ¿En qué componente APX Batch se establece la conexión a Base de Datos?
+a. XML
+b. DTO
+c. JOB
+d. Librería
+e. PROPERTIES
+answer = d
+
+* El consumo de una transacción APX se realiza mediante el método HTTP?
+a. PATCH
+b. GET
+c. POST y GET
+d. UPDATED, DELETE
+e. POST
+answer = e
+
+* Dónde se ubica el archivo sql.UUAAR001IMPL.properties
+a. Implementación de la librería
+b. Interfaz de la librería
+c. Transacción
+answer = a
+
+* Cuándo es recomendable hacer el diagrama de componentes
+a. al finalizar el desarrollo
+b. al intermedio del desarrollo
+c. al inicio del desarrollo
+answer = c
+
+* A quien se solicita accesos para la consola apx
+a. scrum master
+b. product owner
+c. arquitecto
+d. team leader
+answer = c
+
+* Qué perfil debo tener para poder aprobar Pull Request?
+a. developer
+b. technical lead
+c. release manager
+answer = a
+
+* Si quiero agregar una dependencia en la librería, qué comando debo usar?
+a. apx add dep
+b. apx add in
+c. apx add util
+answer = a
+
+* Cuál es el comando para eliminar una librería externa?
+a. apx del dep
+answer = a
+
+* Cuál es el comando para eliminar un parámetro de entrada?
+a. apx del in
+answer = a
+
+* Cuál es el comando para ver las dependencias?
+a. apx show dep
+answer = a
+
+* Cómo se llama el documento que tiene las especificaciones que son necesarias que debe tener la transacción?
+a. D520
+b. T907
+c. C204
+d. L011
+answer = a
+
+* Cuántos tipos de tickets gobierno existe? - para el gobierno de APX
+a. 1
+b. 2
+c. 3
+answer = c
+
+* Cuántos tipos de tickets de gobierno de Arquitectura existen?
+a. 2
+b. 3
+c. 1	
+answer = b
+
+* En el gobierno de APX, cómo se llama el ticket generado para nuevos componentes?
+a. APX Component Request
+b. APX Component Express Modification
+c. APX Component Modification
+answer = a
+
+* considerando que tienes un ticket APX Component Express Modification, es necesario pasar el ticket por certificación octa?.
+a. verdadero
+b. falso
+answer = b
+
+* puedo desplegar una feature en calidad
+a. no
+b. si
+answer = a
+
+* en el descriptor, cómo reconoces un parámetro obligatorio?
+a. mandatory="1"
+answer = a
+
 * Cuando ejecutamos una malla para su ejecución, en qué estado inicia?
 a. NO OK
 b. STARTING
@@ -385,12 +609,19 @@ answer = b
 * Un proceso batch APX puede consumir un API external
 a. FALSO
 b. VERDADERO
+answer = b
 
 * ¿Qué interface se utiliza para declarar un writer en un APX Batch?
 a. ItemWriter
 b. ItemProcess
 c. ItemBatchWriter
 d. CustomerItemWriter
+answer = a
+
+* Los steps van a poder ser de dos tipos:
+a.
+Chunk (Fragmento): se procesan conjuntos de datos de entrada bajo la misma transacción
+Task (Tasklet): se realiza una operación dentro del step
 answer = a
 
 * Qué son el Reader, Process y Writer?
@@ -424,6 +655,12 @@ c. Dimension
 d. Control M
 e. Todos
 answer = a,c,d
+
+* qué tipos de batch existe
+a.
+apx-ora
+apx-batch
+answer = a
 
 * ¿Qué proceso en batch job realiza el commit?
 ¿En qué componente, se procesa el bloque de registros definidos por el límite del intervalo (commit)?
@@ -506,6 +743,13 @@ d. usuario final
 e. arquitectura final
 answer = b
 
+* cuales son los steps dentro de chunk
+a.
+reader
+procesor
+writer
+answer = a
+
 * ¿En qué componente se pueden realizar el grabado de registros a una base de datos?
 a. Step
 b. Writer
@@ -547,7 +791,7 @@ a. R1
 b. R2
 c. R3
 d. NA
-anwer = c
+answer = c
 
 * ¿Qué tipo de parámetro se debe utilizar para contabilizar registros en mongoDb?
 a. SUM
@@ -572,6 +816,10 @@ c. INSERT_INTO
 d. INSERT_ONLY
 e. INSERT_MANY
 answer = b
+
+* Qué propiedad se utiliza para la inserción de muchos registros en Mongo DB
+a. InsertMany()/EnumOperation.INSERT_MANY
+answer = a
 
 * Desde la lógica de negocio en la implementación de la librería, como hacemos referencia a las propiedades de mongo en la consola APX?
 a. Usando el nombre del collection
@@ -622,6 +870,21 @@ d. database.UUAA.name
 e. database.UUAA.showsql
 answer = e
 
+* qué job se utiliza para grabar en db oracle
+a. apx-ora
+answer = a
+
+* tipos de operaciones Oracle
+a.
+update
+batchUpdate
+queryForMap
+queryForList
+pagingQueryForMap
+pagingQueryForList
+pagingQueryForTable
+answer = a
+
 * Que método se usa para insertar en Oracle
 a. update
 b. select
@@ -656,6 +919,28 @@ g. oracle_sell_script
 h. mongo_batch
 answer = c,e
 
+* En una librería APX ¿Cómo se envían los parámetros de variable a la utilidad que permite ejecutar operaciones en Oracle?
+a. Set<Object>
+b. List<Object>
+c. DataTable<Object>
+d. Map<String, Object>
+e. Object[]
+answer = d
+
+* ¿Cuál query es una buena práctica para consultar una BD oracle que se requiere filtrar por un campo constante?
+a. SELECT p.NAME
+			FROM PPAN.T_PPAN_PARTICIPANT_SNAPSHOT p
+			WHERE p.PROPOSAL_ID = :proposal_id and p.PARTICIPANT_TYPE = :participant_type;
+b. SELECT p.NAME
+			FROM PPAN.T_PPAN_PARTICIPANT_SNAPSHOT p
+			WHERE p.PROPOSAL_ID = :proposal_id and p.PARTICIPANT_TYPE = ‘H’;
+c. FROM PPAN.T_PPAN_PARTICIPANT_SNAPSHOT p
+		WHERE p.PROPOSAL_ID = :proposal_id and p.PARTICIPANT_TYPE = ‘H’;
+d. NA
+e. SELECT * FROM PPAN.T_PPAN_PARTICIPANT_SNAPSHOT p
+		WHERE p.PROPOSAL_ID = :proposal_id and p.PARTICIPANT_TYPE = :participant_type;
+answer = e
+
 * Cuántas TRX como máximo se pueden enviar en cics:
 a. 2
 b. 3
@@ -663,6 +948,10 @@ c. 4
 d. 5
 e. 6
 answer = d
+
+* que protocolo apx cisc conector
+a. ps10
+answer = a
 
 * El tiempo de respuesta considerado por defecto para cics?
 a. 5
