@@ -186,7 +186,6 @@ function parseQuestions(text){
   
   // show navigation buttons after questions are loaded
   document.getElementById("startExamBtn").style.display = "inline-block";
-  document.getElementById("submitBtn").style.display = "inline-block";
 }
 
 function escapeHtml(str) {
@@ -202,20 +201,50 @@ function escapeHtml(str) {
    Timer & exam lifecycle
    ------------------------- */
 function startExam(){
+  const btnStart = document.getElementById("startExamBtn");
+ 
+  if(btnStart.textContent === "Reload Exam") {
+    btnStart.textContent = "Start Exam";
+
+	document.querySelectorAll('#exam input').forEach(inp => {
+	  inp.disabled = false;   // make sure it’s enabled
+	  inp.checked = false;    // uncheck it
+	});
+
+    // show navigation buttons after questions are loaded
+    document.getElementById("submitBtn").style.display = "none";
+    document.getElementById("layout").style.display = "none";
+    document.getElementById("toggleOneAtTime").style.display = "none";
+
+	// stop timer
+	if(timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+
+	// stop recording
+	if(recordingActive) toggleRecording(); // stops recorder and creates file  
+
+	document.getElementById("result").innerHTML = "";
+
+	document.getElementById('fileInput').disabled = false;
+  
+    return;
+  }
+  
   // show navigation buttons after questions are loaded
+  btnStart.textContent = "Reload Exam";
+  document.getElementById("submitBtn").style.display = "inline-block";
   document.getElementById("layout").style.display = "inline-block";
   document.getElementById("toggleOneAtTime").style.display = "inline-block";
 
   // ask for webcam and start preview + recording automatically
   initCameraAndPrepareRecording().then(() => {
-    startTimer();
-    // disable start button and file input
-    document.getElementById('startExamBtn').disabled = true;
-    document.getElementById('fileInput').disabled = true;
-    // auto-start recording if not already
-    if(!recordingActive) toggleRecording();
+	startTimer();
+	// disable start button and file input
+	//document.getElementById('startExamBtn').disabled = true;
+	document.getElementById('fileInput').disabled = true;
+	// auto-start recording if not already
+	if(!recordingActive) toggleRecording();
   }).catch(err => {
-    alert('Camera error or permission denied: ' + err);
+	alert('Camera error or permission denied: ' + err);
   });
 }
 
