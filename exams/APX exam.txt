@@ -699,7 +699,7 @@ b. apx add shell
 c. apx add job
 d. apx add batch
 e. apx add process
-answer = a,c
+answer = c
 
 * ¿Cuáles son los tipos de JOBs APX? (múltiple elección)
 a. APX_ORA
